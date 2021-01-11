@@ -1,0 +1,466 @@
+ubuntu@ip-172-31-19-163:~$ gradle
+
+Welcome to Gradle 6.5.1!
+
+Here are the highlights of this release:
+ - Experimental file-system watching
+ - Improved version ordering
+ - New samples
+
+For more details see https://docs.gradle.org/6.5.1/release-notes.html
+
+Starting a Gradle Daemon (subsequent builds will be faster)
+
+> Task :help
+
+Welcome to Gradle 6.5.1.
+
+To run a build, run gradle <task> ...
+
+To see a list of available tasks, run gradle tasks
+
+To see a list of command-line options, run gradle --help
+
+To see more detail about a task, run gradle help --task <task>
+
+For troubleshooting, visit https://help.gradle.org
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.5.1/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 4s
+1 actionable task: 1 executed
+ubuntu@ip-172-31-19-163:~$ pwd
+/home/ubuntu
+ubuntu@ip-172-31-19-163:~$ dir
+Desktop  Documents  Downloads  Music  Pictures	Public	Templates  Videos  dev	thinclient_drives  workspace
+ubuntu@ip-172-31-19-163:~$ cd workspace/
+ubuntu@ip-172-31-19-163:~/workspace$ dir
+assignment-submission
+ubuntu@ip-172-31-19-163:~/workspace$ cd assignment-submission/
+ubuntu@ip-172-31-19-163:~/workspace/assignment-submission$ touch build.gradle
+ubuntu@ip-172-31-19-163:~/workspace/assignment-submission$ gradle wrapper
+
+BUILD SUCCESSFUL in 1s
+1 actionable task: 1 executed
+ubuntu@ip-172-31-19-163:~/workspace/assignment-submission$ dir
+build.gradle  gradle  gradlew  gradlew.bat
+ubuntu@ip-172-31-19-163:~/workspace/assignment-submission$ ./gradlew tasks
+
+> Task :tasks
+
+------------------------------------------------------------
+Tasks runnable from root project
+------------------------------------------------------------
+
+Default tasks: tasks
+
+Build Setup tasks
+-----------------
+init - Initializes a new Gradle build.
+wrapper - Generates Gradle wrapper files.
+
+Help tasks
+----------
+buildEnvironment - Displays all buildscript dependencies declared in root project 'assignment-submission'.
+components - Displays the components produced by root project 'assignment-submission'. [incubating]
+dependencies - Displays all dependencies declared in root project 'assignment-submission'.
+dependencyInsight - Displays the insight into a specific dependency in root project 'assignment-submission'.
+dependentComponents - Displays the dependent components of components in root project 'assignment-submission'. [incubating]
+help - Displays a help message.
+model - Displays the configuration model of root project 'assignment-submission'. [incubating]
+outgoingVariants - Displays the outgoing variants of root project 'assignment-submission'.
+projects - Displays the sub-projects of root project 'assignment-submission'.
+properties - Displays the properties of root project 'assignment-submission'.
+tasks - Displays the tasks runnable from root project 'assignment-submission'.
+
+PAL Assignments tasks
+---------------------
+cloudNativeDeveloperCloudFoundry - Run cloudNativeDeveloperCloudFoundry
+cloudNativeDeveloperDatabaseAccess - Run cloudNativeDeveloperDatabaseAccess
+cloudNativeDeveloperDatabaseMigrations - Run cloudNativeDeveloperDatabaseMigrations
+cloudNativeDeveloperDistributedSystemDeployment - Run cloudNativeDeveloperDistributedSystemDeployment
+cloudNativeDeveloperDistributedSystemWithCircuitBreaker - Run cloudNativeDeveloperDistributedSystemWithCircuitBreaker
+cloudNativeDeveloperDistributedSystemWithConfigServer - Run cloudNativeDeveloperDistributedSystemWithConfigServer
+cloudNativeDeveloperDistributedSystemWithSecurity - Run cloudNativeDeveloperDistributedSystemWithSecurity
+cloudNativeDeveloperDistributedSystemWithServiceDiscovery - Run cloudNativeDeveloperDistributedSystemWithServiceDiscovery
+cloudNativeDeveloperHealthMonitoring - Run cloudNativeDeveloperHealthMonitoring
+cloudNativeDeveloperPipelines - Run cloudNativeDeveloperPipelines
+cloudNativeDeveloperRest - Run cloudNativeDeveloperRest
+cloudNativeDeveloperReviewPipeline - Run cloudNativeDeveloperReviewPipeline
+cloudNativeDeveloperScaling - Run cloudNativeDeveloperScaling
+cloudNativeDeveloperSimpleApp - Run cloudNativeDeveloperSimpleApp
+cloudNativeEvolutionDistributedConfiguration - Run cloudNativeEvolutionDistributedConfiguration
+cloudNativeEvolutionMonolith - Run cloudNativeEvolutionMonolith
+cloudNativeEvolutionServiceDiscovery - Run cloudNativeEvolutionServiceDiscovery
+cloudNativeEvolutionSubscriptions - Run cloudNativeEvolutionSubscriptions
+cloudNativeWorkshopDistributedSystem - Run cloudNativeWorkshopDistributedSystem
+cloudNativeWorkshopDistributedSystemWithServiceDiscovery - Run cloudNativeWorkshopDistributedSystemWithServiceDiscovery
+cloudNativeWorkshopSpringBootApp - Run cloudNativeWorkshopSpringBootApp
+dataAggregateDesign - Run dataAggregateDesign
+dataAssignmentSubmission - Run dataAssignmentSubmission
+dataBoundedContexts - Run dataBoundedContexts
+dataCqrs - Run dataCqrs
+dataEventCollaboration - Run dataEventCollaboration
+dataEventSourcing - Run dataEventSourcing
+dataInitialState - Run dataInitialState
+dataRichDomainModel - Run dataRichDomainModel
+dotnetCloudNativeDeveloperDistributedSystemDeployment - Run dotnetCloudNativeDeveloperDistributedSystemDeployment
+dotnetCloudNativeDeveloperDistributedSystemWithCircuitBreaker - Run dotnetCloudNativeDeveloperDistributedSystemWithCircuitBreaker
+dotnetCloudNativeDeveloperDistributedSystemWithConfigServer - Run dotnetCloudNativeDeveloperDistributedSystemWithConfigServer
+dotnetCloudNativeDeveloperDistributedSystemWithSecurity - Run dotnetCloudNativeDeveloperDistributedSystemWithSecurity
+dotnetCloudNativeDeveloperDistributedSystemWithServiceDiscovery - Run dotnetCloudNativeDeveloperDistributedSystemWithServiceDiscovery
+modernizationCircuitBreaker - Run modernizationCircuitBreaker
+modernizationConfigServer - Run modernizationConfigServer
+modernizationKotlin - Run modernizationKotlin
+modernizationMavenToGradle - Run modernizationMavenToGradle
+modernizationMicroservices - Run modernizationMicroservices
+modernizationMigrations - Run modernizationMigrations
+modernizationMultipleJars - Run modernizationMultipleJars
+modernizationSecurity - Run modernizationSecurity
+modernizationServiceDiscovery - Run modernizationServiceDiscovery
+modernizationStrutsToSpring - Run modernizationStrutsToSpring
+palForDevsPksBasicDeployment - Run palForDevsPksBasicDeployment
+palForDevsPksBlueGreenDeployments - Run palForDevsPksBlueGreenDeployments
+palForDevsPksCanaryDeployments - Run palForDevsPksCanaryDeployments
+palForDevsPksConfiguration - Run palForDevsPksConfiguration
+palForDevsPksDeploymentStrategies - Run palForDevsPksDeploymentStrategies
+palForDevsPksExternalDatastore - Run palForDevsPksExternalDatastore
+palForDevsPksK8sClusterManagement - Run palForDevsPksK8sClusterManagement
+palForDevsPksK8sClusterOrganization - Run palForDevsPksK8sClusterOrganization
+palForDevsPksLogging - Run palForDevsPksLogging
+palForDevsPksPodDisruptionBudgets - Run palForDevsPksPodDisruptionBudgets
+palForDevsPksPodsReplicaSets - Run palForDevsPksPodsReplicaSets
+palForDevsPksScaling - Run palForDevsPksScaling
+palForDevsPksStatefulApplications - Run palForDevsPksStatefulApplications
+prerequisites - Run prerequisites
+replatformingBackgroundJobsWithAmqp - Run replatformingBackgroundJobsWithAmqp
+replatformingBackgroundJobsWithDb - Run replatformingBackgroundJobsWithDb
+replatformingBuildpacks - Run replatformingBuildpacks
+replatformingGradling - Run replatformingGradling
+replatformingLogging - Run replatformingLogging
+replatformingManagingDataSources - Run replatformingManagingDataSources
+replatformingMavenization - Run replatformingMavenization
+replatformingRemoveInstanceSpecificState - Run replatformingRemoveInstanceSpecificState
+replatformingRemovingPersistenceToFileSystem - Run replatformingRemovingPersistenceToFileSystem
+replatformingRemovingReadsFromFileSystem - Run replatformingRemovingReadsFromFileSystem
+replatformingSpringBootification - Run replatformingSpringBootification
+replatformingStruts - Run replatformingStruts
+replatformingWorkshopTomeeBuildpack - Run replatformingWorkshopTomeeBuildpack
+replatformingWorkshopWiringServlet - Run replatformingWorkshopWiringServlet
+testAssignment - Run testAssignment
+
+To see all tasks and more detail, run gradlew tasks --all
+
+To see more detail about a task, run gradlew help --task <task>
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.5.1/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 5s
+1 actionable task: 1 executed
+ubuntu@ip-172-31-19-163:~/workspace/assignment-submission$ ./gradlew testAssignment
+> Task :testAssignment FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':testAssignment'.
+> Need project property `exampleUrl`, use command line argument "-PexampleUrl=someValue"
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.5.1/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD FAILED in 1s
+1 actionable task: 1 executed
+ubuntu@ip-172-31-19-163:~/workspace/assignment-submission$ ./gradlew testAssignment -PexampleUrl=http://www.example.com
+
+> Task :testAssignment
+
+Starting assignment...
+
+GET http://www.example.com/
+
+Assignment was successful.
+
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.5.1/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 3s
+1 actionable task: 1 executed
+ubuntu@ip-172-31-19-163:~/workspace/assignment-submission$ cd ..
+ubuntu@ip-172-31-19-163:~/workspace$ cd pal-tracker/
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ git tag
+actuator-solution
+actuator-start
+deployment-solution
+deployment-start
+jdbc-solution
+jdbc-start
+migration-solution
+migration-start
+mvc-solution
+mvc-start
+pipeline-solution
+pipeline-start
+spring-boot-solution
+spring-boot-start
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ git log --graph --decorate --oneline --all
+* dbad811 (tag: actuator-solution, origin/solution) Add actuator endpoints
+* bcba571 (tag: actuator-start) Add tests for Actuator lab
+* 4525d46 (tag: jdbc-solution) Persist time entries in database
+* 96c52f2 (tag: jdbc-start) Add tests for persisting time entries in database
+* 8a851e3 (tag: migration-solution) Add migrations and pipeline changes
+* 8848d8f (tag: migration-start) Add task for migrating databases
+* 86143ec (tag: mvc-solution) Add TimeEntry MVC in memory
+* 69b119f (tag: mvc-start) Add tests for MVC lab
+* 94ed420 (tag: pipeline-solution) Update route
+* cd05e68 (tag: pipeline-start) Add deployment pipeline
+* 5c121ce (tag: deployment-solution) Add manifest file for deployment to PCF
+* 0b679d1 (tag: deployment-start) Add tests for deployment lab
+* e62f2be (tag: spring-boot-solution) Simple Spring Boot app
+* 0ac8b7f (HEAD -> master, tag: spring-boot-start, origin/master) Initial commit
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ git remote add origin https://github.com/vishwajeetdpatil/pal-tracker.git
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ git push origin master --tags
+Username for 'https://github.com/vishwajeetdpatil/pal-tracker.git': vishwajeetdpatil
+Password for 'https://vishwajeetdpatil@github.com/vishwajeetdpatil/pal-tracker.git':
+Counting objects: 163, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (65/65), done.
+Writing objects: 100% (163/163), 73.58 KiB | 73.58 MiB/s, done.
+Total 163 (delta 33), reused 163 (delta 33)
+remote: Resolving deltas: 100% (33/33), done.
+To https://github.com/vishwajeetdpatil/pal-tracker.git
+ * [new branch]      master -> master
+ * [new tag]         actuator-solution -> actuator-solution
+ * [new tag]         actuator-start -> actuator-start
+ * [new tag]         deployment-solution -> deployment-solution
+ * [new tag]         deployment-start -> deployment-start
+ * [new tag]         jdbc-solution -> jdbc-solution
+ * [new tag]         jdbc-start -> jdbc-start
+ * [new tag]         migration-solution -> migration-solution
+ * [new tag]         migration-start -> migration-start
+ * [new tag]         mvc-solution -> mvc-solution
+ * [new tag]         mvc-start -> mvc-start
+ * [new tag]         pipeline-solution -> pipeline-solution
+ * [new tag]         pipeline-start -> pipeline-start
+ * [new tag]         spring-boot-solution -> spring-boot-solution
+ * [new tag]         spring-boot-start -> spring-boot-start
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ gradle wrapper --gradle-version 6.0.1 --distribution-type all
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.5.1/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 782ms
+1 actionable task: 1 executed
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ dir
+gradle  gradlew  gradlew.bat  pal-tracker-codebase.txt
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ touch build.gradle
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ dir
+build.gradle  gradle  gradlew  gradlew.bat  pal-tracker-codebase.txt
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ cf login -a api.sys.evans.pal.pivotal.io
+API endpoint: api.sys.evans.pal.pivotal.io
+
+Email: vp145@ntrs.com
+
+Password:
+Password:
+Password:
+Authenticating...
+Credentials were rejected, please try again.
+
+
+Password:
+Authenticating...
+OK
+
+Targeted org vp145.ntrs.com
+
+Targeted space sandbox
+
+
+
+API endpoint:   https://api.sys.evans.pal.pivotal.io (API version: 3.85.0)
+User:           vp145@ntrs.com
+Org:            vp145.ntrs.com
+Space:          sandbox
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ cf push pal-tracker -p ./build/libs/pal-tracker.jar --no-start
+Pushing app pal-tracker to org vp145.ntrs.com / space sandbox as vp145@ntrs.com...
+Getting app info...
+The app cannot be mapped to route pal-tracker.apps.evans.pal.pivotal.io because the route exists in a different space.
+FAILED
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ cf push pal-tracker -p ./build/libs/pal-tracker.jar --no-start --random-route
+Pushing app pal-tracker to org vp145.ntrs.com / space sandbox as vp145@ntrs.com...
+Getting app info...
+Creating app with these attributes...
++ name:       pal-tracker
+  path:       /home/ubuntu/workspace/pal-tracker/build/libs/pal-tracker.jar
+  routes:
++   pal-tracker-shy-emu-yv.apps.evans.pal.pivotal.io
+
+Creating app pal-tracker...
+Mapping routes...
+Comparing local files to remote cache...
+Packaging files to upload...
+Uploading files...
+ 287.77 KiB / 287.77 KiB [==================================================================================================================================] 100.00% 1s
+
+Waiting for API to complete processing files...
+
+name:              pal-tracker
+requested state:   stopped
+routes:            pal-tracker-shy-emu-yv.apps.evans.pal.pivotal.io
+last uploaded:
+stack:
+buildpacks:
+
+type:           web
+instances:      0/1
+memory usage:   1024M
+     state   since                  cpu    memory   disk     details
+#0   down    2021-01-11T08:47:02Z   0.0%   0 of 0   0 of 0
+
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ cf set-env pal-tracker JBP_CONFIG_OPEN_JDK_JRE '{ jre: { version: 11.+ } }'
+Setting env variable 'JBP_CONFIG_OPEN_JDK_JRE' for app pal-tracker in org vp145.ntrs.com / space sandbox as vp145@ntrs.com...
+OK
+TIP: Use 'cf restage pal-tracker' to ensure your env variable changes take effect
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ cf start pal-tracker
+Starting app pal-tracker in org vp145.ntrs.com / space sandbox as vp145@ntrs.com...
+
+Staging app and tracing logs...
+   Downloading binary_buildpack...
+   Downloading nodejs_buildpack...
+   Downloading python_buildpack...
+   Downloading go_buildpack...
+   Downloading r_buildpack...
+   Downloaded binary_buildpack (9.3M)
+   Downloading java_buildpack_offline...
+   Downloaded java_buildpack_offline
+   Downloading staticfile_buildpack...
+   Downloaded staticfile_buildpack
+   Downloading dotnet_core_buildpack...
+   Downloaded nodejs_buildpack (225.5M)
+   Downloading php_buildpack...
+   Downloaded python_buildpack (462.8M)
+   Downloading ruby_buildpack...
+   Downloaded go_buildpack (523M)
+   Downloading dotnet_core_buildpack_old...
+   Downloaded dotnet_core_buildpack_old (4.8M)
+   Downloading nginx_buildpack...
+   Downloaded dotnet_core_buildpack (525.4M)
+   Downloaded nginx_buildpack (53.9M)
+   Downloaded r_buildpack (700.3M)
+   Downloaded ruby_buildpack (357.5M)
+   Downloaded php_buildpack (543.9M)
+   Cell 7450076b-5364-4fa8-a7ce-cf25ac98b040 creating container for instance 790ed4a8-4a1e-4662-a80c-60e456228c85
+   Cell 7450076b-5364-4fa8-a7ce-cf25ac98b040 successfully created container for instance 790ed4a8-4a1e-4662-a80c-60e456228c85
+   Downloading app package...
+   Downloaded app package (15M)
+   -----> Java Buildpack v4.34 (offline) | https://github.com/cloudfoundry/java-buildpack.git#04543c2
+   -----> Downloading Jvmkill Agent 1.16.0_RELEASE from https://java-buildpack.cloudfoundry.org/jvmkill/bionic/x86_64/jvmkill-1.16.0-RELEASE.so (found in cache)
+   -----> Downloading Open Jdk JRE 11.0.9_11 from https://java-buildpack.cloudfoundry.org/openjdk/bionic/x86_64/bellsoft-jre11.0.9%2B11-linux-amd64.tar.gz (found in cache)
+          Expanding Open Jdk JRE to .java-buildpack/open_jdk_jre (1.3s)
+          JVM DNS caching disabled in lieu of BOSH DNS caching
+   -----> Downloading Open JDK Like Memory Calculator 3.13.0_RELEASE from https://java-buildpack.cloudfoundry.org/memory-calculator/bionic/x86_64/memory-calculator-3.13.0-RELEASE.tar.gz (found in cache)
+          Loaded Classes: 18555, Threads: 250
+   -----> Downloading Client Certificate Mapper 1.11.0_RELEASE from https://java-buildpack.cloudfoundry.org/client-certificate-mapper/client-certificate-mapper-1.11.0-RELEASE.jar (found in cache)
+   -----> Downloading Container Security Provider 1.18.0_RELEASE from https://java-buildpack.cloudfoundry.org/container-security-provider/container-security-provider-1.18.0-RELEASE.jar (found in cache)
+   -----> Downloading Spring Auto Reconfiguration 2.11.0_RELEASE from https://java-buildpack.cloudfoundry.org/auto-reconfiguration/auto-reconfiguration-2.11.0-RELEASE.jar (found in cache)
+   Exit status 0
+   Uploading droplet, build artifacts cache...
+   Uploading build artifacts cache...
+   Uploading droplet...
+   Uploaded build artifacts cache (131B)
+   Uploaded droplet (64.1M)
+   Uploading complete
+   Cell 7450076b-5364-4fa8-a7ce-cf25ac98b040 stopping instance 790ed4a8-4a1e-4662-a80c-60e456228c85
+   Cell 7450076b-5364-4fa8-a7ce-cf25ac98b040 destroying container for instance 790ed4a8-4a1e-4662-a80c-60e456228c85
+   Cell 7450076b-5364-4fa8-a7ce-cf25ac98b040 successfully destroyed container for instance 790ed4a8-4a1e-4662-a80c-60e456228c85
+
+Waiting for app to start...
+
+name:              pal-tracker
+requested state:   started
+routes:            pal-tracker-shy-emu-yv.apps.evans.pal.pivotal.io
+last uploaded:     Mon 11 Jan 08:48:41 UTC 2021
+stack:             cflinuxfs3
+buildpacks:        java
+
+type:            web
+instances:       1/1
+memory usage:    1024M
+start command:   JAVA_OPTS="-agentpath:$PWD/.java-buildpack/open_jdk_jre/bin/jvmkill-1.16.0_RELEASE=printHeapHistogram=1 -Djava.io.tmpdir=$TMPDIR
+                 -XX:ActiveProcessorCount=$(nproc) -Djava.ext.dirs= -Djava.security.properties=$PWD/.java-buildpack/java_security/java.security $JAVA_OPTS" &&
+                 CALCULATED_MEMORY=$($PWD/.java-buildpack/open_jdk_jre/bin/java-buildpack-memory-calculator-3.13.0_RELEASE -totMemory=$MEMORY_LIMIT -loadedClasses=19349
+                 -poolType=metaspace -stackThreads=250 -vmOptions="$JAVA_OPTS") && echo JVM Memory Configuration: $CALCULATED_MEMORY && JAVA_OPTS="$JAVA_OPTS
+                 $CALCULATED_MEMORY" && MALLOC_ARENA_MAX=2 SERVER_PORT=$PORT eval exec $PWD/.java-buildpack/open_jdk_jre/bin/java $JAVA_OPTS -cp
+                 $PWD/.:$PWD/.java-buildpack/container_security_provider/container_security_provider-1.18.0_RELEASE.jar org.springframework.boot.loader.JarLauncher
+     state     since                  cpu    memory    disk      details
+#0   running   2021-01-11T08:49:03Z   0.0%   0 of 1G   0 of 1G
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ cd ~/workspace/assignment-submission
+ubuntu@ip-172-31-19-163:~/workspace/assignment-submission$
+ubuntu@ip-172-31-19-163:~/workspace/assignment-submission$ ./gradlew cloudNativeDeveloperSimpleApp -PserverUrl=http://pal-tracker-shy-emu-yv.apps.evans.pal.pivotal.io/
+
+> Task :cloudNativeDeveloperSimpleApp
+
+Starting assignment...
+
+GET http://pal-tracker-shy-emu-yv.apps.evans.pal.pivotal.io/
+
+Assignment was successful.
+
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.5.1/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 3s
+1 actionable task: 1 executed
+ubuntu@ip-172-31-19-163:~/workspace/assignment-submission$ cd ..
+ubuntu@ip-172-31-19-163:~/workspace$ cd pal-tracker/
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ dir
+build  build.gradle  gradle  gradlew  gradlew.bat  pal-tracker-codebase.txt  settings.gradle  src
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ git add .
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ git commit -m "Push for first lab"
+[master 8b593e6] Push for first lab
+ Committer: Ubuntu <ubuntu@ip-172-31-19-163.ap-southeast-1.compute.internal>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 8 files changed, 333 insertions(+)
+ create mode 100644 build.gradle
+ create mode 100644 gradle/wrapper/gradle-wrapper.jar
+ create mode 100644 gradle/wrapper/gradle-wrapper.properties
+ create mode 100755 gradlew
+ create mode 100644 gradlew.bat
+ create mode 100644 settings.gradle
+ create mode 100644 src/main/java/io/pivotal/pal/tracker/PalTrackerApplication.java
+ create mode 100644 src/main/java/io/pivotal/pal/tracker/WelcomeController.java
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ git push
+Counting objects: 19, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (11/11), done.
+Writing objects: 100% (19/19), 56.72 KiB | 14.18 MiB/s, done.
+Total 19 (delta 0), reused 1 (delta 0)
+To https://github.com/vishwajeetdpatil/pal-tracker.git
+   0ac8b7f..8b593e6  master -> master
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$
