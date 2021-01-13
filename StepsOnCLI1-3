@@ -1,0 +1,2143 @@
+ubuntu@ip-172-31-19-163:~$ gradle
+
+Welcome to Gradle 6.5.1!
+
+Here are the highlights of this release:
+ - Experimental file-system watching
+ - Improved version ordering
+ - New samples
+
+For more details see https://docs.gradle.org/6.5.1/release-notes.html
+
+Starting a Gradle Daemon (subsequent builds will be faster)
+
+> Task :help
+
+Welcome to Gradle 6.5.1.
+
+To run a build, run gradle <task> ...
+
+To see a list of available tasks, run gradle tasks
+
+To see a list of command-line options, run gradle --help
+
+To see more detail about a task, run gradle help --task <task>
+
+For troubleshooting, visit https://help.gradle.org
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.5.1/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 4s
+1 actionable task: 1 executed
+ubuntu@ip-172-31-19-163:~$ pwd
+/home/ubuntu
+ubuntu@ip-172-31-19-163:~$ dir
+Desktop  Documents  Downloads  Music  Pictures	Public	Templates  Videos  dev	thinclient_drives  workspace
+ubuntu@ip-172-31-19-163:~$ cd workspace/
+ubuntu@ip-172-31-19-163:~/workspace$ dir
+assignment-submission
+ubuntu@ip-172-31-19-163:~/workspace$ cd assignment-submission/
+ubuntu@ip-172-31-19-163:~/workspace/assignment-submission$ touch build.gradle
+ubuntu@ip-172-31-19-163:~/workspace/assignment-submission$ gradle wrapper
+
+BUILD SUCCESSFUL in 1s
+1 actionable task: 1 executed
+ubuntu@ip-172-31-19-163:~/workspace/assignment-submission$ dir
+build.gradle  gradle  gradlew  gradlew.bat
+ubuntu@ip-172-31-19-163:~/workspace/assignment-submission$ ./gradlew tasks
+
+> Task :tasks
+
+------------------------------------------------------------
+Tasks runnable from root project
+------------------------------------------------------------
+
+Default tasks: tasks
+
+Build Setup tasks
+-----------------
+init - Initializes a new Gradle build.
+wrapper - Generates Gradle wrapper files.
+
+Help tasks
+----------
+buildEnvironment - Displays all buildscript dependencies declared in root project 'assignment-submission'.
+components - Displays the components produced by root project 'assignment-submission'. [incubating]
+dependencies - Displays all dependencies declared in root project 'assignment-submission'.
+dependencyInsight - Displays the insight into a specific dependency in root project 'assignment-submission'.
+dependentComponents - Displays the dependent components of components in root project 'assignment-submission'. [incubating]
+help - Displays a help message.
+model - Displays the configuration model of root project 'assignment-submission'. [incubating]
+outgoingVariants - Displays the outgoing variants of root project 'assignment-submission'.
+projects - Displays the sub-projects of root project 'assignment-submission'.
+properties - Displays the properties of root project 'assignment-submission'.
+tasks - Displays the tasks runnable from root project 'assignment-submission'.
+
+PAL Assignments tasks
+---------------------
+cloudNativeDeveloperCloudFoundry - Run cloudNativeDeveloperCloudFoundry
+cloudNativeDeveloperDatabaseAccess - Run cloudNativeDeveloperDatabaseAccess
+cloudNativeDeveloperDatabaseMigrations - Run cloudNativeDeveloperDatabaseMigrations
+cloudNativeDeveloperDistributedSystemDeployment - Run cloudNativeDeveloperDistributedSystemDeployment
+cloudNativeDeveloperDistributedSystemWithCircuitBreaker - Run cloudNativeDeveloperDistributedSystemWithCircuitBreaker
+cloudNativeDeveloperDistributedSystemWithConfigServer - Run cloudNativeDeveloperDistributedSystemWithConfigServer
+cloudNativeDeveloperDistributedSystemWithSecurity - Run cloudNativeDeveloperDistributedSystemWithSecurity
+cloudNativeDeveloperDistributedSystemWithServiceDiscovery - Run cloudNativeDeveloperDistributedSystemWithServiceDiscovery
+cloudNativeDeveloperHealthMonitoring - Run cloudNativeDeveloperHealthMonitoring
+cloudNativeDeveloperPipelines - Run cloudNativeDeveloperPipelines
+cloudNativeDeveloperRest - Run cloudNativeDeveloperRest
+cloudNativeDeveloperReviewPipeline - Run cloudNativeDeveloperReviewPipeline
+cloudNativeDeveloperScaling - Run cloudNativeDeveloperScaling
+cloudNativeDeveloperSimpleApp - Run cloudNativeDeveloperSimpleApp
+cloudNativeEvolutionDistributedConfiguration - Run cloudNativeEvolutionDistributedConfiguration
+cloudNativeEvolutionMonolith - Run cloudNativeEvolutionMonolith
+cloudNativeEvolutionServiceDiscovery - Run cloudNativeEvolutionServiceDiscovery
+cloudNativeEvolutionSubscriptions - Run cloudNativeEvolutionSubscriptions
+cloudNativeWorkshopDistributedSystem - Run cloudNativeWorkshopDistributedSystem
+cloudNativeWorkshopDistributedSystemWithServiceDiscovery - Run cloudNativeWorkshopDistributedSystemWithServiceDiscovery
+cloudNativeWorkshopSpringBootApp - Run cloudNativeWorkshopSpringBootApp
+dataAggregateDesign - Run dataAggregateDesign
+dataAssignmentSubmission - Run dataAssignmentSubmission
+dataBoundedContexts - Run dataBoundedContexts
+dataCqrs - Run dataCqrs
+dataEventCollaboration - Run dataEventCollaboration
+dataEventSourcing - Run dataEventSourcing
+dataInitialState - Run dataInitialState
+dataRichDomainModel - Run dataRichDomainModel
+dotnetCloudNativeDeveloperDistributedSystemDeployment - Run dotnetCloudNativeDeveloperDistributedSystemDeployment
+dotnetCloudNativeDeveloperDistributedSystemWithCircuitBreaker - Run dotnetCloudNativeDeveloperDistributedSystemWithCircuitBreaker
+dotnetCloudNativeDeveloperDistributedSystemWithConfigServer - Run dotnetCloudNativeDeveloperDistributedSystemWithConfigServer
+dotnetCloudNativeDeveloperDistributedSystemWithSecurity - Run dotnetCloudNativeDeveloperDistributedSystemWithSecurity
+dotnetCloudNativeDeveloperDistributedSystemWithServiceDiscovery - Run dotnetCloudNativeDeveloperDistributedSystemWithServiceDiscovery
+modernizationCircuitBreaker - Run modernizationCircuitBreaker
+modernizationConfigServer - Run modernizationConfigServer
+modernizationKotlin - Run modernizationKotlin
+modernizationMavenToGradle - Run modernizationMavenToGradle
+modernizationMicroservices - Run modernizationMicroservices
+modernizationMigrations - Run modernizationMigrations
+modernizationMultipleJars - Run modernizationMultipleJars
+modernizationSecurity - Run modernizationSecurity
+modernizationServiceDiscovery - Run modernizationServiceDiscovery
+modernizationStrutsToSpring - Run modernizationStrutsToSpring
+palForDevsPksBasicDeployment - Run palForDevsPksBasicDeployment
+palForDevsPksBlueGreenDeployments - Run palForDevsPksBlueGreenDeployments
+palForDevsPksCanaryDeployments - Run palForDevsPksCanaryDeployments
+palForDevsPksConfiguration - Run palForDevsPksConfiguration
+palForDevsPksDeploymentStrategies - Run palForDevsPksDeploymentStrategies
+palForDevsPksExternalDatastore - Run palForDevsPksExternalDatastore
+palForDevsPksK8sClusterManagement - Run palForDevsPksK8sClusterManagement
+palForDevsPksK8sClusterOrganization - Run palForDevsPksK8sClusterOrganization
+palForDevsPksLogging - Run palForDevsPksLogging
+palForDevsPksPodDisruptionBudgets - Run palForDevsPksPodDisruptionBudgets
+palForDevsPksPodsReplicaSets - Run palForDevsPksPodsReplicaSets
+palForDevsPksScaling - Run palForDevsPksScaling
+palForDevsPksStatefulApplications - Run palForDevsPksStatefulApplications
+prerequisites - Run prerequisites
+replatformingBackgroundJobsWithAmqp - Run replatformingBackgroundJobsWithAmqp
+replatformingBackgroundJobsWithDb - Run replatformingBackgroundJobsWithDb
+replatformingBuildpacks - Run replatformingBuildpacks
+replatformingGradling - Run replatformingGradling
+replatformingLogging - Run replatformingLogging
+replatformingManagingDataSources - Run replatformingManagingDataSources
+replatformingMavenization - Run replatformingMavenization
+replatformingRemoveInstanceSpecificState - Run replatformingRemoveInstanceSpecificState
+replatformingRemovingPersistenceToFileSystem - Run replatformingRemovingPersistenceToFileSystem
+replatformingRemovingReadsFromFileSystem - Run replatformingRemovingReadsFromFileSystem
+replatformingSpringBootification - Run replatformingSpringBootification
+replatformingStruts - Run replatformingStruts
+replatformingWorkshopTomeeBuildpack - Run replatformingWorkshopTomeeBuildpack
+replatformingWorkshopWiringServlet - Run replatformingWorkshopWiringServlet
+testAssignment - Run testAssignment
+
+To see all tasks and more detail, run gradlew tasks --all
+
+To see more detail about a task, run gradlew help --task <task>
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.5.1/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 5s
+1 actionable task: 1 executed
+ubuntu@ip-172-31-19-163:~/workspace/assignment-submission$ ./gradlew testAssignment
+> Task :testAssignment FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':testAssignment'.
+> Need project property `exampleUrl`, use command line argument "-PexampleUrl=someValue"
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.5.1/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD FAILED in 1s
+1 actionable task: 1 executed
+ubuntu@ip-172-31-19-163:~/workspace/assignment-submission$ ./gradlew testAssignment -PexampleUrl=http://www.example.com
+
+> Task :testAssignment
+
+Starting assignment...
+
+GET http://www.example.com/
+
+Assignment was successful.
+
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.5.1/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 3s
+1 actionable task: 1 executed
+ubuntu@ip-172-31-19-163:~/workspace/assignment-submission$ cd ..
+ubuntu@ip-172-31-19-163:~/workspace$ cd pal-tracker/
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ git tag
+actuator-solution
+actuator-start
+deployment-solution
+deployment-start
+jdbc-solution
+jdbc-start
+migration-solution
+migration-start
+mvc-solution
+mvc-start
+pipeline-solution
+pipeline-start
+spring-boot-solution
+spring-boot-start
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ git log --graph --decorate --oneline --all
+* dbad811 (tag: actuator-solution, origin/solution) Add actuator endpoints
+* bcba571 (tag: actuator-start) Add tests for Actuator lab
+* 4525d46 (tag: jdbc-solution) Persist time entries in database
+* 96c52f2 (tag: jdbc-start) Add tests for persisting time entries in database
+* 8a851e3 (tag: migration-solution) Add migrations and pipeline changes
+* 8848d8f (tag: migration-start) Add task for migrating databases
+* 86143ec (tag: mvc-solution) Add TimeEntry MVC in memory
+* 69b119f (tag: mvc-start) Add tests for MVC lab
+* 94ed420 (tag: pipeline-solution) Update route
+* cd05e68 (tag: pipeline-start) Add deployment pipeline
+* 5c121ce (tag: deployment-solution) Add manifest file for deployment to PCF
+* 0b679d1 (tag: deployment-start) Add tests for deployment lab
+* e62f2be (tag: spring-boot-solution) Simple Spring Boot app
+* 0ac8b7f (HEAD -> master, tag: spring-boot-start, origin/master) Initial commit
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ git remote add origin https://github.com/vishwajeetdpatil/pal-tracker.git
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ git push origin master --tags
+Username for 'https://github.com/vishwajeetdpatil/pal-tracker.git': vishwajeetdpatil
+Password for 'https://vishwajeetdpatil@github.com/vishwajeetdpatil/pal-tracker.git':
+Counting objects: 163, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (65/65), done.
+Writing objects: 100% (163/163), 73.58 KiB | 73.58 MiB/s, done.
+Total 163 (delta 33), reused 163 (delta 33)
+remote: Resolving deltas: 100% (33/33), done.
+To https://github.com/vishwajeetdpatil/pal-tracker.git
+ * [new branch]      master -> master
+ * [new tag]         actuator-solution -> actuator-solution
+ * [new tag]         actuator-start -> actuator-start
+ * [new tag]         deployment-solution -> deployment-solution
+ * [new tag]         deployment-start -> deployment-start
+ * [new tag]         jdbc-solution -> jdbc-solution
+ * [new tag]         jdbc-start -> jdbc-start
+ * [new tag]         migration-solution -> migration-solution
+ * [new tag]         migration-start -> migration-start
+ * [new tag]         mvc-solution -> mvc-solution
+ * [new tag]         mvc-start -> mvc-start
+ * [new tag]         pipeline-solution -> pipeline-solution
+ * [new tag]         pipeline-start -> pipeline-start
+ * [new tag]         spring-boot-solution -> spring-boot-solution
+ * [new tag]         spring-boot-start -> spring-boot-start
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ gradle wrapper --gradle-version 6.0.1 --distribution-type all
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.5.1/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 782ms
+1 actionable task: 1 executed
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ dir
+gradle  gradlew  gradlew.bat  pal-tracker-codebase.txt
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ touch build.gradle
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ dir
+build.gradle  gradle  gradlew  gradlew.bat  pal-tracker-codebase.txt
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ cf login -a api.sys.evans.pal.pivotal.io
+API endpoint: api.sys.evans.pal.pivotal.io
+
+Email: vp145@ntrs.com
+
+Password:
+Password:
+Password:
+Authenticating...
+Credentials were rejected, please try again.
+
+
+Password:
+Authenticating...
+OK
+
+Targeted org vp145.ntrs.com
+
+Targeted space sandbox
+
+
+
+API endpoint:   https://api.sys.evans.pal.pivotal.io (API version: 3.85.0)
+User:           vp145@ntrs.com
+Org:            vp145.ntrs.com
+Space:          sandbox
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ cf push pal-tracker -p ./build/libs/pal-tracker.jar --no-start
+Pushing app pal-tracker to org vp145.ntrs.com / space sandbox as vp145@ntrs.com...
+Getting app info...
+The app cannot be mapped to route pal-tracker.apps.evans.pal.pivotal.io because the route exists in a different space.
+FAILED
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ cf push pal-tracker -p ./build/libs/pal-tracker.jar --no-start --random-route
+Pushing app pal-tracker to org vp145.ntrs.com / space sandbox as vp145@ntrs.com...
+Getting app info...
+Creating app with these attributes...
++ name:       pal-tracker
+  path:       /home/ubuntu/workspace/pal-tracker/build/libs/pal-tracker.jar
+  routes:
++   pal-tracker-shy-emu-yv.apps.evans.pal.pivotal.io
+
+Creating app pal-tracker...
+Mapping routes...
+Comparing local files to remote cache...
+Packaging files to upload...
+Uploading files...
+ 287.77 KiB / 287.77 KiB [==================================================================================================================================] 100.00% 1s
+
+Waiting for API to complete processing files...
+
+name:              pal-tracker
+requested state:   stopped
+routes:            pal-tracker-shy-emu-yv.apps.evans.pal.pivotal.io
+last uploaded:
+stack:
+buildpacks:
+
+type:           web
+instances:      0/1
+memory usage:   1024M
+     state   since                  cpu    memory   disk     details
+#0   down    2021-01-11T08:47:02Z   0.0%   0 of 0   0 of 0
+
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ cf set-env pal-tracker JBP_CONFIG_OPEN_JDK_JRE '{ jre: { version: 11.+ } }'
+Setting env variable 'JBP_CONFIG_OPEN_JDK_JRE' for app pal-tracker in org vp145.ntrs.com / space sandbox as vp145@ntrs.com...
+OK
+TIP: Use 'cf restage pal-tracker' to ensure your env variable changes take effect
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ cf start pal-tracker
+Starting app pal-tracker in org vp145.ntrs.com / space sandbox as vp145@ntrs.com...
+
+Staging app and tracing logs...
+   Downloading binary_buildpack...
+   Downloading nodejs_buildpack...
+   Downloading python_buildpack...
+   Downloading go_buildpack...
+   Downloading r_buildpack...
+   Downloaded binary_buildpack (9.3M)
+   Downloading java_buildpack_offline...
+   Downloaded java_buildpack_offline
+   Downloading staticfile_buildpack...
+   Downloaded staticfile_buildpack
+   Downloading dotnet_core_buildpack...
+   Downloaded nodejs_buildpack (225.5M)
+   Downloading php_buildpack...
+   Downloaded python_buildpack (462.8M)
+   Downloading ruby_buildpack...
+   Downloaded go_buildpack (523M)
+   Downloading dotnet_core_buildpack_old...
+   Downloaded dotnet_core_buildpack_old (4.8M)
+   Downloading nginx_buildpack...
+   Downloaded dotnet_core_buildpack (525.4M)
+   Downloaded nginx_buildpack (53.9M)
+   Downloaded r_buildpack (700.3M)
+   Downloaded ruby_buildpack (357.5M)
+   Downloaded php_buildpack (543.9M)
+   Cell 7450076b-5364-4fa8-a7ce-cf25ac98b040 creating container for instance 790ed4a8-4a1e-4662-a80c-60e456228c85
+   Cell 7450076b-5364-4fa8-a7ce-cf25ac98b040 successfully created container for instance 790ed4a8-4a1e-4662-a80c-60e456228c85
+   Downloading app package...
+   Downloaded app package (15M)
+   -----> Java Buildpack v4.34 (offline) | https://github.com/cloudfoundry/java-buildpack.git#04543c2
+   -----> Downloading Jvmkill Agent 1.16.0_RELEASE from https://java-buildpack.cloudfoundry.org/jvmkill/bionic/x86_64/jvmkill-1.16.0-RELEASE.so (found in cache)
+   -----> Downloading Open Jdk JRE 11.0.9_11 from https://java-buildpack.cloudfoundry.org/openjdk/bionic/x86_64/bellsoft-jre11.0.9%2B11-linux-amd64.tar.gz (found in cache)
+          Expanding Open Jdk JRE to .java-buildpack/open_jdk_jre (1.3s)
+          JVM DNS caching disabled in lieu of BOSH DNS caching
+   -----> Downloading Open JDK Like Memory Calculator 3.13.0_RELEASE from https://java-buildpack.cloudfoundry.org/memory-calculator/bionic/x86_64/memory-calculator-3.13.0-RELEASE.tar.gz (found in cache)
+          Loaded Classes: 18555, Threads: 250
+   -----> Downloading Client Certificate Mapper 1.11.0_RELEASE from https://java-buildpack.cloudfoundry.org/client-certificate-mapper/client-certificate-mapper-1.11.0-RELEASE.jar (found in cache)
+   -----> Downloading Container Security Provider 1.18.0_RELEASE from https://java-buildpack.cloudfoundry.org/container-security-provider/container-security-provider-1.18.0-RELEASE.jar (found in cache)
+   -----> Downloading Spring Auto Reconfiguration 2.11.0_RELEASE from https://java-buildpack.cloudfoundry.org/auto-reconfiguration/auto-reconfiguration-2.11.0-RELEASE.jar (found in cache)
+   Exit status 0
+   Uploading droplet, build artifacts cache...
+   Uploading build artifacts cache...
+   Uploading droplet...
+   Uploaded build artifacts cache (131B)
+   Uploaded droplet (64.1M)
+   Uploading complete
+   Cell 7450076b-5364-4fa8-a7ce-cf25ac98b040 stopping instance 790ed4a8-4a1e-4662-a80c-60e456228c85
+   Cell 7450076b-5364-4fa8-a7ce-cf25ac98b040 destroying container for instance 790ed4a8-4a1e-4662-a80c-60e456228c85
+   Cell 7450076b-5364-4fa8-a7ce-cf25ac98b040 successfully destroyed container for instance 790ed4a8-4a1e-4662-a80c-60e456228c85
+
+Waiting for app to start...
+
+name:              pal-tracker
+requested state:   started
+routes:            pal-tracker-shy-emu-yv.apps.evans.pal.pivotal.io
+last uploaded:     Mon 11 Jan 08:48:41 UTC 2021
+stack:             cflinuxfs3
+buildpacks:        java
+
+type:            web
+instances:       1/1
+memory usage:    1024M
+start command:   JAVA_OPTS="-agentpath:$PWD/.java-buildpack/open_jdk_jre/bin/jvmkill-1.16.0_RELEASE=printHeapHistogram=1 -Djava.io.tmpdir=$TMPDIR
+                 -XX:ActiveProcessorCount=$(nproc) -Djava.ext.dirs= -Djava.security.properties=$PWD/.java-buildpack/java_security/java.security $JAVA_OPTS" &&
+                 CALCULATED_MEMORY=$($PWD/.java-buildpack/open_jdk_jre/bin/java-buildpack-memory-calculator-3.13.0_RELEASE -totMemory=$MEMORY_LIMIT -loadedClasses=19349
+                 -poolType=metaspace -stackThreads=250 -vmOptions="$JAVA_OPTS") && echo JVM Memory Configuration: $CALCULATED_MEMORY && JAVA_OPTS="$JAVA_OPTS
+                 $CALCULATED_MEMORY" && MALLOC_ARENA_MAX=2 SERVER_PORT=$PORT eval exec $PWD/.java-buildpack/open_jdk_jre/bin/java $JAVA_OPTS -cp
+                 $PWD/.:$PWD/.java-buildpack/container_security_provider/container_security_provider-1.18.0_RELEASE.jar org.springframework.boot.loader.JarLauncher
+     state     since                  cpu    memory    disk      details
+#0   running   2021-01-11T08:49:03Z   0.0%   0 of 1G   0 of 1G
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ cd ~/workspace/assignment-submission
+ubuntu@ip-172-31-19-163:~/workspace/assignment-submission$
+ubuntu@ip-172-31-19-163:~/workspace/assignment-submission$ ./gradlew cloudNativeDeveloperSimpleApp -PserverUrl=http://pal-tracker-shy-emu-yv.apps.evans.pal.pivotal.io/
+
+> Task :cloudNativeDeveloperSimpleApp
+
+Starting assignment...
+
+GET http://pal-tracker-shy-emu-yv.apps.evans.pal.pivotal.io/
+
+Assignment was successful.
+
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.5.1/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 3s
+1 actionable task: 1 executed
+ubuntu@ip-172-31-19-163:~/workspace/assignment-submission$ cd ..
+ubuntu@ip-172-31-19-163:~/workspace$ cd pal-tracker/
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ dir
+build  build.gradle  gradle  gradlew  gradlew.bat  pal-tracker-codebase.txt  settings.gradle  src
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ git add .
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ git commit -m "Push for first lab"
+[master 8b593e6] Push for first lab
+ Committer: Ubuntu <ubuntu@ip-172-31-19-163.ap-southeast-1.compute.internal>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 8 files changed, 333 insertions(+)
+ create mode 100644 build.gradle
+ create mode 100644 gradle/wrapper/gradle-wrapper.jar
+ create mode 100644 gradle/wrapper/gradle-wrapper.properties
+ create mode 100755 gradlew
+ create mode 100644 gradlew.bat
+ create mode 100644 settings.gradle
+ create mode 100644 src/main/java/io/pivotal/pal/tracker/PalTrackerApplication.java
+ create mode 100644 src/main/java/io/pivotal/pal/tracker/WelcomeController.java
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ git push
+Counting objects: 19, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (11/11), done.
+Writing objects: 100% (19/19), 56.72 KiB | 14.18 MiB/s, done.
+Total 19 (delta 0), reused 1 (delta 0)
+To https://github.com/vishwajeetdpatil/pal-tracker.git
+   0ac8b7f..8b593e6  master -> master
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ git push .
+Everything up-to-date
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ git cherry-pick deployment-start
+[master dbacae7] Add tests for deployment lab
+ Author: Bill Kable <bkable@pivotal.io>
+ Date: Wed Jan 8 11:09:04 2020 -0500
+ 3 files changed, 67 insertions(+)
+ create mode 100644 src/test/java/test/pivotal/pal/tracker/EnvControllerTest.java
+ create mode 100644 src/test/java/test/pivotal/pal/tracker/WelcomeControllerTest.java
+ create mode 100644 src/test/java/test/pivotal/pal/trackerapi/WelcomeApiTest.java
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ WELCOME_MESSAGE=hello ./gradlew bootRun
+
+Welcome to Gradle 6.0.1!
+
+Here are the highlights of this release:
+ - Substantial improvements in dependency management, including
+   - Publishing Gradle Module Metadata in addition to pom.xml
+   - Advanced control of transitive versions
+   - Support for optional features and dependencies
+   - Rules to tweak published metadata
+ - Support for Java 13
+ - Faster incremental Java and Groovy compilation
+ - New Zinc compiler for Scala
+ - VS2019 support
+ - Support for Gradle Enterprise plugin 3.0
+
+For more details see https://docs.gradle.org/6.0.1/release-notes.html
+
+
+> Task :bootRun FAILED
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.2.2.RELEASE)
+
+2021-01-12 04:48:37.146  INFO 11285 --- [           main] i.p.pal.tracker.PalTrackerApplication    : Starting PalTrackerApplication on ip-172-31-19-163 with PID 11285 (/home/ubuntu/workspace/pal-tracker/build/classes/java/main started by ubuntu in /home/ubuntu/workspace/pal-tracker)
+2021-01-12 04:48:37.148  INFO 11285 --- [           main] i.p.pal.tracker.PalTrackerApplication    : No active profile set, falling back to default profiles: default
+2021-01-12 04:48:37.812  INFO 11285 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-01-12 04:48:37.821  INFO 11285 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-12 04:48:37.821  INFO 11285 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2021-01-12 04:48:37.901  INFO 11285 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-12 04:48:37.901  INFO 11285 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 716 ms
+2021-01-12 04:48:38.032  INFO 11285 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-12 04:48:38.134  INFO 11285 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2021-01-12 04:48:38.142  INFO 11285 --- [           main] ConditionEvaluationReportLoggingListener :
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-01-12 04:48:38.146 ERROR 11285 --- [           main] o.s.b.d.LoggingFailureAnalysisReporter   :
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2021-01-12 04:48:38.148  INFO 11285 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':bootRun'.
+> Process 'command '/usr/lib/jvm/java-11-openjdk-amd64/bin/java'' finished with non-zero exit value 1
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 3s
+2 actionable tasks: 2 executed
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ WELCOME_MESSAGE=hello ./gradlew bootRun
+
+> Task :bootRun
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.2.2.RELEASE)
+
+2021-01-12 04:49:16.391  INFO 11403 --- [           main] i.p.pal.tracker.PalTrackerApplication    : Starting PalTrackerApplication on ip-172-31-19-163 with PID 11403 (/home/ubuntu/workspace/pal-tracker/build/classes/java/main started by ubuntu in /home/ubuntu/workspace/pal-tracker)
+2021-01-12 04:49:16.393  INFO 11403 --- [           main] i.p.pal.tracker.PalTrackerApplication    : No active profile set, falling back to default profiles: default
+2021-01-12 04:49:17.066  INFO 11403 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-01-12 04:49:17.075  INFO 11403 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-12 04:49:17.075  INFO 11403 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2021-01-12 04:49:17.151  INFO 11403 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-12 04:49:17.151  INFO 11403 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 720 ms
+2021-01-12 04:49:17.282  INFO 11403 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-12 04:49:17.394  INFO 11403 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-01-12 04:49:17.398  INFO 11403 --- [           main] i.p.pal.tracker.PalTrackerApplication    : Started PalTrackerApplication in 1.304 seconds (JVM running for 1.587)
+2021-01-12 04:49:36.820  INFO 11403 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-12 04:49:36.820  INFO 11403 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-12 04:49:36.825  INFO 11403 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+<=========----> 75% EXECUTING [1m 23s]
+> :bootRun
+^Cubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ ./gradlew bootRun
+
+> Task :bootRun
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.2.2.RELEASE)
+
+2021-01-12 04:50:51.954  INFO 11592 --- [           main] i.p.pal.tracker.PalTrackerApplication    : Starting PalTrackerApplication on ip-172-31-19-163 with PID 11592 (/home/ubuntu/workspace/pal-tracker/build/classes/java/main started by ubuntu in /home/ubuntu/workspace/pal-tracker)
+2021-01-12 04:50:51.959  INFO 11592 --- [           main] i.p.pal.tracker.PalTrackerApplication    : No active profile set, falling back to default profiles: default
+2021-01-12 04:50:52.630  INFO 11592 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-01-12 04:50:52.639  INFO 11592 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-12 04:50:52.639  INFO 11592 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2021-01-12 04:50:52.721  INFO 11592 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-12 04:50:52.721  INFO 11592 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 725 ms
+2021-01-12 04:50:52.853  INFO 11592 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-12 04:50:52.965  INFO 11592 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-01-12 04:50:52.969  INFO 11592 --- [           main] i.p.pal.tracker.PalTrackerApplication    : Started PalTrackerApplication in 1.344 seconds (JVM running for 1.634)
+2021-01-12 04:51:10.001  INFO 11592 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-12 04:51:10.001  INFO 11592 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-12 04:51:10.007  INFO 11592 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+<=========----> 75% EXECUTING [44s]
+> :bootRun
+^Cubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ ./gradlew bootRun
+
+> Task :bootRun
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.2.2.RELEASE)
+
+2021-01-12 04:51:39.454  INFO 11720 --- [           main] i.p.pal.tracker.PalTrackerApplication    : Starting PalTrackerApplication on ip-172-31-19-163 with PID 11720 (/home/ubuntu/workspace/pal-tracker/build/classes/java/main started by ubuntu in /home/ubuntu/workspace/pal-tracker)
+2021-01-12 04:51:39.457  INFO 11720 --- [           main] i.p.pal.tracker.PalTrackerApplication    : No active profile set, falling back to default profiles: default
+2021-01-12 04:51:40.128  INFO 11720 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-01-12 04:51:40.136  INFO 11720 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-12 04:51:40.136  INFO 11720 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2021-01-12 04:51:40.215  INFO 11720 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-12 04:51:40.216  INFO 11720 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 722 ms
+2021-01-12 04:51:40.347  INFO 11720 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-12 04:51:40.458  INFO 11720 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-01-12 04:51:40.462  INFO 11720 --- [           main] i.p.pal.tracker.PalTrackerApplication    : Started PalTrackerApplication in 1.318 seconds (JVM running for 1.614)
+2021-01-12 04:51:48.502  INFO 11720 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-12 04:51:48.502  INFO 11720 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-12 04:51:48.507  INFO 11720 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+<=========----> 75% EXECUTING [2m 41s]
+> :bootRun
+^Cubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ ./gradlew bootRun
+
+> Task :bootRun
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.2.2.RELEASE)
+
+2021-01-12 04:54:30.390  INFO 11938 --- [           main] i.p.pal.tracker.PalTrackerApplication    : Starting PalTrackerApplication on ip-172-31-19-163 with PID 11938 (/home/ubuntu/workspace/pal-tracker/build/classes/java/main started by ubuntu in /home/ubuntu/workspace/pal-tracker)
+2021-01-12 04:54:30.392  INFO 11938 --- [           main] i.p.pal.tracker.PalTrackerApplication    : No active profile set, falling back to default profiles: default
+2021-01-12 04:54:31.090  INFO 11938 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-01-12 04:54:31.098  INFO 11938 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-12 04:54:31.099  INFO 11938 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2021-01-12 04:54:31.180  INFO 11938 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-12 04:54:31.180  INFO 11938 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 743 ms
+2021-01-12 04:54:31.331  INFO 11938 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-12 04:54:31.440  INFO 11938 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-01-12 04:54:31.444  INFO 11938 --- [           main] i.p.pal.tracker.PalTrackerApplication    : Started PalTrackerApplication in 1.382 seconds (JVM running for 1.713)
+2021-01-12 04:54:43.222  INFO 11938 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-12 04:54:43.223  INFO 11938 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-12 04:54:43.229  INFO 11938 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+<=========----> 75% EXECUTING [1m 46s]
+> :bootRun
+^Cubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ cf push
+Pushing app  to org vp145.ntrs.com / space sandbox as vp145@ntrs.com...
+Incorrect Usage: The push command requires an app name. The app name can be supplied as an argument or with a manifest.yml file.
+FAILED
+
+NAME:
+   push - Push a new app or sync changes to an existing app
+
+USAGE:
+   cf push APP_NAME [-b BUILDPACK_NAME] [-c COMMAND] [-f MANIFEST_PATH | --no-manifest] [--no-start]
+   [-i NUM_INSTANCES] [-k DISK] [-m MEMORY] [-p PATH] [-s STACK] [-t HEALTH_TIMEOUT] [-u (process | port | http)]
+   [--no-route | --random-route | --hostname HOST | --no-hostname] [-d DOMAIN] [--route-path ROUTE_PATH] [--var KEY=VALUE]... [--vars-file VARS_FILE_PATH]...
+
+   cf push APP_NAME --docker-image [REGISTRY_HOST:PORT/]IMAGE[:TAG] [--docker-username USERNAME]
+   [-c COMMAND] [-f MANIFEST_PATH | --no-manifest] [--no-start]
+   [-i NUM_INSTANCES] [-k DISK] [-m MEMORY] [-t HEALTH_TIMEOUT] [-u (process | port | http)]
+   [--no-route | --random-route | --hostname HOST | --no-hostname] [-d DOMAIN] [--route-path ROUTE_PATH] [--var KEY=VALUE]... [--vars-file VARS_FILE_PATH]...
+
+   cf push APP_NAME --droplet DROPLET_PATH
+   [-c COMMAND] [-f MANIFEST_PATH | --no-manifest] [--no-start]
+   [-i NUM_INSTANCES] [-k DISK] [-m MEMORY] [-t HEALTH_TIMEOUT] [-u (process | port | http)]
+   [--no-route | --random-route | --hostname HOST | --no-hostname] [-d DOMAIN] [--route-path ROUTE_PATH] [--var KEY=VALUE]... [--vars-file VARS_FILE_PATH]...
+
+   cf push -f MANIFEST_WITH_MULTIPLE_APPS_PATH [APP_NAME] [--no-start]
+
+ALIAS:
+   p
+
+OPTIONS:
+   -b                           Custom buildpack by name (e.g. my-buildpack) or Git URL (e.g. 'https://github.com/cloudfoundry/java-buildpack.git') or Git URL with a branch or tag (e.g. 'https://github.com/cloudfoundry/java-buildpack.git#v3.3.0' for 'v3.3.0' tag). To use built-in buildpacks only, specify 'default' or 'null'
+   -c                           Startup command, set to null to reset to default start command
+   -d                           Specify a custom domain (e.g. private-domain.example.com, apps.internal.com) to use instead of the default domain
+   --docker-image, -o           Docker-image to be used (e.g. user/docker-image-name)
+   --docker-username            Repository username; used with password from environment variable CF_DOCKER_PASSWORD
+   --droplet                    Path to a tgz file with a pre-staged app
+   -f                           Path to manifest
+   --health-check-type, -u      Application health check type (Default: 'port', 'none' accepted for 'process', 'http' implies endpoint '/')
+   --hostname, -n               Hostname (e.g. my-subdomain)
+   -i                           Number of instances
+   -k                           Disk limit (e.g. 256M, 1024M, 1G)
+   -m                           Memory limit (e.g. 256M, 1024M, 1G)
+   --no-hostname                Map the root domain to this app
+   --no-manifest                Ignore manifest file
+   --no-route                   Do not map a route to this app and remove routes from previous pushes of this app
+   --no-start                   Do not start an app after pushing
+   -p                           Path to app directory or to a zip file of the contents of the app directory
+   --random-route               Create a random route for this app
+   --route-path                 Path for the route
+   -s                           Stack to use (a stack is a pre-built file system, including an operating system, that can run apps)
+   --vars-file                  Path to a variable substitution file for manifest; can specify multiple times
+   --var                        Variable key value pair for variable substitution, (e.g., name=app1); can specify multiple times
+   -t                           Time (in seconds) allowed to elapse between starting up an app and the first healthy response from the app
+
+ENVIRONMENT:
+   CF_STAGING_TIMEOUT=15        Max wait time for buildpack staging, in minutes
+   CF_STARTUP_TIMEOUT=5         Max wait time for app instance startup, in minutes
+   CF_DOCKER_PASSWORD=          Password used for private docker repository
+
+SEE ALSO:
+   apps, create-app-manifest, logs, ssh, start
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ cf push pal-tracker
+Pushing app pal-tracker to org vp145.ntrs.com / space sandbox as vp145@ntrs.com...
+Getting app info...
+Updating app with these attributes...
+  name:                pal-tracker
+  path:                /home/ubuntu/workspace/pal-tracker
+  command:             JAVA_OPTS="-agentpath:$PWD/.java-buildpack/open_jdk_jre/bin/jvmkill-1.16.0_RELEASE=printHeapHistogram=1 -Djava.io.tmpdir=$TMPDIR -XX:ActiveProcessorCount=$(nproc) -Djava.ext.dirs= -Djava.security.properties=$PWD/.java-buildpack/java_security/java.security $JAVA_OPTS" && CALCULATED_MEMORY=$($PWD/.java-buildpack/open_jdk_jre/bin/java-buildpack-memory-calculator-3.13.0_RELEASE -totMemory=$MEMORY_LIMIT -loadedClasses=19349 -poolType=metaspace -stackThreads=250 -vmOptions="$JAVA_OPTS") && echo JVM Memory Configuration: $CALCULATED_MEMORY && JAVA_OPTS="$JAVA_OPTS $CALCULATED_MEMORY" && MALLOC_ARENA_MAX=2 SERVER_PORT=$PORT eval exec $PWD/.java-buildpack/open_jdk_jre/bin/java $JAVA_OPTS -cp $PWD/.:$PWD/.java-buildpack/container_security_provider/container_security_provider-1.18.0_RELEASE.jar org.springframework.boot.loader.JarLauncher
+  disk quota:          1G
+  health check type:   port
+  instances:           1
+  memory:              1G
+  stack:               cflinuxfs3
+  env:
+    JBP_CONFIG_OPEN_JDK_JRE
+  routes:
+    pal-tracker-shy-emu-yv.apps.evans.pal.pivotal.io
+
+Updating app pal-tracker...
+Mapping routes...
+Comparing local files to remote cache...
+Packaging files to upload...
+Uploading files...
+ 16.40 MiB / 16.40 MiB [====================================================================================================================================] 100.00% 3s
+
+Waiting for API to complete processing files...
+
+Stopping app...
+
+Staging app and tracing logs...
+   Downloading binary_buildpack...
+   Downloading nodejs_buildpack...
+   Downloading java_buildpack_offline...
+   Downloading python_buildpack...
+   Downloading ruby_buildpack...
+   Downloaded binary_buildpack
+   Downloading go_buildpack...
+   Downloaded java_buildpack_offline
+   Downloading r_buildpack...
+   Downloaded ruby_buildpack
+   Downloading nginx_buildpack...
+   Downloaded nodejs_buildpack
+   Downloaded python_buildpack
+   Downloading staticfile_buildpack...
+   Downloading dotnet_core_buildpack...
+   Downloaded staticfile_buildpack
+   Downloading php_buildpack...
+   Downloaded nginx_buildpack
+   Downloaded go_buildpack
+   Downloading dotnet_core_buildpack_old...
+   Downloaded r_buildpack
+   Downloaded dotnet_core_buildpack
+   Downloaded dotnet_core_buildpack_old
+   Downloaded php_buildpack
+   Cell 5a28ec23-8388-4d9f-a47b-3570e5e7fc2e creating container for instance f1281393-1285-4009-bb9c-cd8b5f614476
+   Cell 5a28ec23-8388-4d9f-a47b-3570e5e7fc2e successfully created container for instance f1281393-1285-4009-bb9c-cd8b5f614476
+   Downloading build artifacts cache...
+   Downloading app package...
+   Downloaded build artifacts cache (131B)
+   Downloaded app package (16.4M)
+   None of the buildpacks detected a compatible application
+   Exit status 222
+   Cell 5a28ec23-8388-4d9f-a47b-3570e5e7fc2e stopping instance f1281393-1285-4009-bb9c-cd8b5f614476
+   Cell 5a28ec23-8388-4d9f-a47b-3570e5e7fc2e destroying container for instance f1281393-1285-4009-bb9c-cd8b5f614476
+   Cell 5a28ec23-8388-4d9f-a47b-3570e5e7fc2e successfully destroyed container for instance f1281393-1285-4009-bb9c-cd8b5f614476
+Error staging application: An app was not successfully detected by any available buildpack
+
+TIP: Use 'cf buildpacks' to see a list of supported buildpacks.
+FAILED
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ cf logs
+Incorrect Usage: the required argument `APP_NAME` was not provided
+
+NAME:
+   logs - Tail or show recent logs for an app
+
+USAGE:
+   cf logs APP_NAME
+
+OPTIONS:
+   --recent      Dump recent logs instead of tailing
+
+SEE ALSO:
+   app, apps, ssh
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ cf logs pal_tracker --recent
+Retrieving logs for app pal_tracker in org vp145.ntrs.com / space sandbox as vp145@ntrs.com...
+
+App 'pal_tracker' not found.
+FAILED
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ cf logs pal-tracker
+Retrieving logs for app pal-tracker in org vp145.ntrs.com / space sandbox as vp145@ntrs.com...
+
+   2021-01-12T04:57:59.40+0000 [CELL/SSHD/0] OUT Exit status 0
+   2021-01-12T04:57:59.44+0000 [APP/PROC/WEB/0] OUT 2021-01-12 04:57:59.438  INFO 21 --- [extShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+   2021-01-12T04:57:59.64+0000 [APP/PROC/WEB/0] OUT Exit status 143
+   2021-01-12T04:57:59.65+0000 [CELL/0] OUT Cell 7450076b-5364-4fa8-a7ce-cf25ac98b040 destroying container for instance d911efa3-137b-4959-4b1d-2be4
+   2021-01-12T04:57:59.84+0000 [PROXY/0] OUT Exit status 137
+   2021-01-12T04:58:00.16+0000 [CELL/0] OUT Cell 7450076b-5364-4fa8-a7ce-cf25ac98b040 successfully destroyed container for instance d911efa3-137b-4959-4b1d-2be4
+^Cubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ cf push pal-tracker
+Pushing app pal-tracker to org vp145.ntrs.com / space sandbox as vp145@ntrs.com...
+Getting app info...
+Updating app with these attributes...
+  name:                pal-tracker
+  path:                /home/ubuntu/workspace/pal-tracker
+  disk quota:          1G
+  health check type:   port
+  instances:           1
+  memory:              1G
+  stack:               cflinuxfs3
+  env:
+    JBP_CONFIG_OPEN_JDK_JRE
+  routes:
+    pal-tracker-shy-emu-yv.apps.evans.pal.pivotal.io
+
+Updating app pal-tracker...
+Mapping routes...
+Comparing local files to remote cache...
+Packaging files to upload...
+Uploading files...
+ 114.44 KiB / 114.44 KiB [==================================================================================================================================] 100.00% 1s
+
+Waiting for API to complete processing files...
+
+Staging app and tracing logs...
+   Downloading binary_buildpack...
+   Downloading nodejs_buildpack...
+   Downloading ruby_buildpack...
+   Downloading java_buildpack_offline...
+   Downloading nginx_buildpack...
+   Downloaded ruby_buildpack
+   Downloading go_buildpack...
+   Downloaded binary_buildpack
+   Downloading r_buildpack...
+   Downloaded java_buildpack_offline
+   Downloading dotnet_core_buildpack...
+   Downloaded nodejs_buildpack
+   Downloading php_buildpack...
+   Downloaded go_buildpack
+   Downloading dotnet_core_buildpack_old...
+   Downloaded dotnet_core_buildpack
+   Downloading python_buildpack...
+   Downloaded r_buildpack
+   Downloading staticfile_buildpack...
+   Downloaded php_buildpack
+   Downloaded dotnet_core_buildpack_old
+   Downloaded staticfile_buildpack
+   Downloaded python_buildpack
+   Downloaded nginx_buildpack
+   Cell 7450076b-5364-4fa8-a7ce-cf25ac98b040 creating container for instance c4be9c2b-8536-4a37-8a9f-fcb249adcb03
+   Cell 7450076b-5364-4fa8-a7ce-cf25ac98b040 successfully created container for instance c4be9c2b-8536-4a37-8a9f-fcb249adcb03
+   Downloading app package...
+   Downloading build artifacts cache...
+   Downloaded build artifacts cache (131B)
+Error staging application: An app was not successfully detected by any available buildpack
+
+TIP: Use 'cf buildpacks' to see a list of supported buildpacks.
+FAILED
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ cf set-env
+Incorrect Usage: the required arguments `APP_NAME`, `ENV_VAR_NAME` and `ENV_VAR_VALUE` were not provided
+
+NAME:
+   set-env - Set an env variable for an app
+
+USAGE:
+   cf set-env APP_NAME ENV_VAR_NAME ENV_VAR_VALUE
+
+ALIAS:
+   se
+
+SEE ALSO:
+   apps, env, restart, set-running-environment-variable-group, set-staging-environment-variable-group, unset-env
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ cf set-env pal-tracker WELCOME_MESSAGE "Hello from Cloud Foundry"
+Setting env variable 'WELCOME_MESSAGE' for app pal-tracker in org vp145.ntrs.com / space sandbox as vp145@ntrs.com...
+OK
+TIP: Use 'cf restage pal-tracker' to ensure your env variable changes take effect
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ cf restage pal-tracker
+This action will cause app downtime.
+
+Restaging app pal-tracker in org vp145.ntrs.com / space sandbox as vp145@ntrs.com...
+
+Staging app and tracing logs...
+   Downloading binary_buildpack...
+   Downloading nodejs_buildpack...
+   Downloading go_buildpack...
+   Downloading java_buildpack_offline...
+   Downloading python_buildpack...
+   Downloaded binary_buildpack
+   Downloading dotnet_core_buildpack...
+   Downloaded go_buildpack
+   Downloading php_buildpack...
+   Downloaded python_buildpack
+   Downloading r_buildpack...
+   Downloaded java_buildpack_offline
+   Downloading ruby_buildpack...
+   Downloaded dotnet_core_buildpack
+   Downloaded r_buildpack
+   Downloading dotnet_core_buildpack_old...
+   Downloading nginx_buildpack...
+   Downloaded nodejs_buildpack
+   Downloading staticfile_buildpack...
+   Downloaded php_buildpack
+   Downloaded ruby_buildpack
+   Downloaded dotnet_core_buildpack_old
+   Downloaded nginx_buildpack
+   Downloaded staticfile_buildpack
+   Cell 7450076b-5364-4fa8-a7ce-cf25ac98b040 creating container for instance d2e342a0-6c35-4908-a5a8-8629d5f7626a
+   Cell 7450076b-5364-4fa8-a7ce-cf25ac98b040 successfully created container for instance d2e342a0-6c35-4908-a5a8-8629d5f7626a
+   Downloading app package...
+   Downloading build artifacts cache...
+   Downloaded build artifacts cache (131B)
+   Downloaded app package (16.3M)
+   None of the buildpacks detected a compatible application
+   Exit status 222
+   Cell 7450076b-5364-4fa8-a7ce-cf25ac98b040 stopping instance d2e342a0-6c35-4908-a5a8-8629d5f7626a
+   Cell 7450076b-5364-4fa8-a7ce-cf25ac98b040 destroying container for instance d2e342a0-6c35-4908-a5a8-8629d5f7626a
+   Cell 7450076b-5364-4fa8-a7ce-cf25ac98b040 successfully destroyed container for instance d2e342a0-6c35-4908-a5a8-8629d5f7626a
+Error staging application: An app was not successfully detected by any available buildpack
+
+TIP: Use 'cf buildpacks' to see a list of supported buildpacks.
+FAILED
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ cf push pal-tracker
+Pushing app pal-tracker to org vp145.ntrs.com / space sandbox as vp145@ntrs.com...
+Getting app info...
+Updating app with these attributes...
+  name:                pal-tracker
+  path:                /home/ubuntu/workspace/pal-tracker
+  disk quota:          1G
+  health check type:   port
+  instances:           1
+  memory:              1G
+  stack:               cflinuxfs3
+  env:
+    JBP_CONFIG_OPEN_JDK_JRE
+    WELCOME_MESSAGE
+  routes:
+    pal-tracker-shy-emu-yv.apps.evans.pal.pivotal.io
+
+Updating app pal-tracker...
+Mapping routes...
+Comparing local files to remote cache...
+Packaging files to upload...
+Uploading files...
+ 114.44 KiB / 114.44 KiB [==================================================================================================================================] 100.00% 1s
+
+Waiting for API to complete processing files...
+
+Staging app and tracing logs...
+   Downloading binary_buildpack...
+   Downloading nodejs_buildpack...
+   Downloading java_buildpack_offline...
+   Downloading python_buildpack...
+   Downloading go_buildpack...
+   Downloaded nodejs_buildpack
+   Downloading r_buildpack...
+   Downloaded binary_buildpack
+   Downloading staticfile_buildpack...
+   Downloaded python_buildpack
+   Downloading dotnet_core_buildpack...
+   Downloaded java_buildpack_offline
+   Downloading php_buildpack...
+   Downloaded go_buildpack
+   Downloading ruby_buildpack...
+   Downloaded staticfile_buildpack
+   Downloading nginx_buildpack...
+   Downloaded php_buildpack
+   Downloaded r_buildpack
+   Downloading dotnet_core_buildpack_old...
+   Downloaded dotnet_core_buildpack
+   Downloaded ruby_buildpack
+   Downloaded nginx_buildpack
+   Downloaded dotnet_core_buildpack_old
+   Cell 7450076b-5364-4fa8-a7ce-cf25ac98b040 creating container for instance 02ff1306-c19d-4d4d-975c-825c0cf0d9dc
+   Cell 7450076b-5364-4fa8-a7ce-cf25ac98b040 successfully created container for instance 02ff1306-c19d-4d4d-975c-825c0cf0d9dc
+   Downloading app package...
+   Downloading build artifacts cache...
+   Downloaded build artifacts cache (131B)
+   Downloaded app package (16.3M)
+Error staging application: An app was not successfully detected by any available buildpack
+
+TIP: Use 'cf buildpacks' to see a list of supported buildpacks.
+FAILED
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ cf buildpacks
+Getting buildpacks...
+
+buildpack                   position   enabled   locked   filename                                              stack
+staticfile_buildpack        1          true      false    staticfile_buildpack-cached-cflinuxfs3-v1.5.14.zip    cflinuxfs3
+java_buildpack_offline      2          true      false    java-buildpack-offline-cflinuxfs3-v4.34.zip           cflinuxfs3
+ruby_buildpack              3          true      false    ruby_buildpack-cached-cflinuxfs3-v1.8.27.zip          cflinuxfs3
+nginx_buildpack             4          true      false    nginx_buildpack-cached-cflinuxfs3-v1.1.19.zip         cflinuxfs3
+nodejs_buildpack            5          true      false    nodejs_buildpack-cached-cflinuxfs3-v1.7.37.zip        cflinuxfs3
+go_buildpack                6          true      false    go_buildpack-cached-cflinuxfs3-v1.9.23.zip            cflinuxfs3
+r_buildpack                 7          true      false    r_buildpack-cached-cflinuxfs3-v1.1.11.zip             cflinuxfs3
+python_buildpack            8          true      false    python_buildpack-cached-cflinuxfs3-v1.7.26.zip        cflinuxfs3
+php_buildpack               9          true      false    php_buildpack-cached-cflinuxfs3-v4.4.27.zip           cflinuxfs3
+dotnet_core_buildpack       10         true      false    dotnet-core_buildpack-cached-cflinuxfs3-v2.3.19.zip   cflinuxfs3
+dotnet_core_buildpack_old   11         true      false    dotnet-core-buildpack-cflinuxfs3-v2.2.8.zip           cflinuxfs3
+binary_buildpack            12         true      false    binary_buildpack-cached-cflinuxfs3-v1.0.36.zip        cflinuxfs3
+binary_buildpack            13         true      false    binary_buildpack-cached-windows2012R2-v1.0.36.zip     windows2012R2
+binary_buildpack            14         true      false    binary_buildpack-cached-windows2016-v1.0.36.zip       windows2016
+binary_buildpack            15         true      false    binary_buildpack-cached-windows-v1.0.36.zip           windows
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ cf push pal-tracker -p ./build/libs/pal-tracker.jar
+Pushing app pal-tracker to org vp145.ntrs.com / space sandbox as vp145@ntrs.com...
+Getting app info...
+Updating app with these attributes...
+  name:                pal-tracker
+  path:                /home/ubuntu/workspace/pal-tracker/build/libs/pal-tracker.jar
+  disk quota:          1G
+  health check type:   port
+  instances:           1
+  memory:              1G
+  stack:               cflinuxfs3
+  env:
+    JBP_CONFIG_OPEN_JDK_JRE
+    WELCOME_MESSAGE
+  routes:
+    pal-tracker-shy-emu-yv.apps.evans.pal.pivotal.io
+
+Updating app pal-tracker...
+Mapping routes...
+Comparing local files to remote cache...
+Packaging files to upload...
+Uploading files...
+ 288.95 KiB / 288.95 KiB [==================================================================================================================================] 100.00% 1s
+
+Waiting for API to complete processing files...
+
+Staging app and tracing logs...
+   Downloading binary_buildpack...
+   Downloading nodejs_buildpack...
+   Downloading python_buildpack...
+   Downloading go_buildpack...
+   Downloading dotnet_core_buildpack...
+   Downloaded dotnet_core_buildpack
+   Downloading dotnet_core_buildpack_old...
+   Downloaded go_buildpack
+   Downloading php_buildpack...
+   Downloaded python_buildpack
+   Downloaded nodejs_buildpack
+   Downloading staticfile_buildpack...
+   Downloaded binary_buildpack
+   Downloading ruby_buildpack...
+   Downloading nginx_buildpack...
+   Downloaded dotnet_core_buildpack_old
+   Downloading java_buildpack_offline...
+   Downloaded php_buildpack
+   Downloading r_buildpack...
+   Downloaded nginx_buildpack
+   Downloaded staticfile_buildpack
+   Downloaded java_buildpack_offline
+   Downloaded ruby_buildpack
+   Downloaded r_buildpack
+   Cell 7450076b-5364-4fa8-a7ce-cf25ac98b040 creating container for instance a625a11b-194e-427a-870f-02fc22c54805
+   Cell 7450076b-5364-4fa8-a7ce-cf25ac98b040 successfully created container for instance a625a11b-194e-427a-870f-02fc22c54805
+   Downloading app package...
+   Downloading build artifacts cache...
+   Downloaded build artifacts cache (131B)
+   Downloaded app package (15M)
+   -----> Java Buildpack v4.34 (offline) | https://github.com/cloudfoundry/java-buildpack.git#04543c2
+   -----> Downloading Jvmkill Agent 1.16.0_RELEASE from https://java-buildpack.cloudfoundry.org/jvmkill/bionic/x86_64/jvmkill-1.16.0-RELEASE.so (found in cache)
+   -----> Downloading Open Jdk JRE 11.0.9_11 from https://java-buildpack.cloudfoundry.org/openjdk/bionic/x86_64/bellsoft-jre11.0.9%2B11-linux-amd64.tar.gz (found in cache)
+          Expanding Open Jdk JRE to .java-buildpack/open_jdk_jre (1.3s)
+          JVM DNS caching disabled in lieu of BOSH DNS caching
+   -----> Downloading Open JDK Like Memory Calculator 3.13.0_RELEASE from https://java-buildpack.cloudfoundry.org/memory-calculator/bionic/x86_64/memory-calculator-3.13.0-RELEASE.tar.gz (found in cache)
+          Loaded Classes: 18555, Threads: 250
+   -----> Downloading Client Certificate Mapper 1.11.0_RELEASE from https://java-buildpack.cloudfoundry.org/client-certificate-mapper/client-certificate-mapper-1.11.0-RELEASE.jar (found in cache)
+   -----> Downloading Container Security Provider 1.18.0_RELEASE from https://java-buildpack.cloudfoundry.org/container-security-provider/container-security-provider-1.18.0-RELEASE.jar (found in cache)
+   -----> Downloading Spring Auto Reconfiguration 2.11.0_RELEASE from https://java-buildpack.cloudfoundry.org/auto-reconfiguration/auto-reconfiguration-2.11.0-RELEASE.jar (found in cache)
+   Exit status 0
+   Uploading droplet, build artifacts cache...
+   Uploading droplet...
+   Uploading build artifacts cache...
+   Uploaded build artifacts cache (131B)
+   Uploaded droplet (64.1M)
+   Uploading complete
+   Cell 7450076b-5364-4fa8-a7ce-cf25ac98b040 stopping instance a625a11b-194e-427a-870f-02fc22c54805
+   Cell 7450076b-5364-4fa8-a7ce-cf25ac98b040 destroying container for instance a625a11b-194e-427a-870f-02fc22c54805
+   Cell 7450076b-5364-4fa8-a7ce-cf25ac98b040 successfully destroyed container for instance a625a11b-194e-427a-870f-02fc22c54805
+
+Waiting for app to start...
+
+name:              pal-tracker
+requested state:   started
+routes:            pal-tracker-shy-emu-yv.apps.evans.pal.pivotal.io
+last uploaded:     Tue 12 Jan 05:08:14 UTC 2021
+stack:             cflinuxfs3
+buildpacks:        java
+
+type:            web
+instances:       1/1
+memory usage:    1024M
+start command:   JAVA_OPTS="-agentpath:$PWD/.java-buildpack/open_jdk_jre/bin/jvmkill-1.16.0_RELEASE=printHeapHistogram=1 -Djava.io.tmpdir=$TMPDIR
+                 -XX:ActiveProcessorCount=$(nproc) -Djava.ext.dirs= -Djava.security.properties=$PWD/.java-buildpack/java_security/java.security $JAVA_OPTS" &&
+                 CALCULATED_MEMORY=$($PWD/.java-buildpack/open_jdk_jre/bin/java-buildpack-memory-calculator-3.13.0_RELEASE -totMemory=$MEMORY_LIMIT -loadedClasses=19349
+                 -poolType=metaspace -stackThreads=250 -vmOptions="$JAVA_OPTS") && echo JVM Memory Configuration: $CALCULATED_MEMORY && JAVA_OPTS="$JAVA_OPTS
+                 $CALCULATED_MEMORY" && MALLOC_ARENA_MAX=2 SERVER_PORT=$PORT eval exec $PWD/.java-buildpack/open_jdk_jre/bin/java $JAVA_OPTS -cp
+                 $PWD/.:$PWD/.java-buildpack/container_security_provider/container_security_provider-1.18.0_RELEASE.jar org.springframework.boot.loader.JarLauncher
+     state     since                  cpu    memory        disk       details
+#0   running   2021-01-12T05:08:28Z   0.0%   34.9K of 1G   8K of 1G
+
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ touch manifest.yml
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ cf delete pal-tracker
+
+Really delete the app pal-tracker?> y
+Deleting app pal-tracker in org vp145.ntrs.com / space sandbox as vp145@ntrs.com...
+OK
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ cf push pal-tracker -p ./build/libs/pal-tracker.jar
+Pushing from manifest to org vp145.ntrs.com / space sandbox as vp145@ntrs.com...
+Using manifest file /home/ubuntu/workspace/pal-tracker/manifest.yml
+Getting app info...
+Creating app with these attributes...
++ name:       pal-tracker
+  path:       /home/ubuntu/workspace/pal-tracker/build/libs/pal-tracker.jar
+  env:
++   JBP_CONFIG_OPEN_JDK_JRE
++   WELCOME_MESSAGE
+  routes:
++   pal-tracker-optimistic-meerkat-bq.apps.evans.pal.pivotal.io
+
+Creating app pal-tracker...
+Mapping routes...
+Comparing local files to remote cache...
+Packaging files to upload...
+Uploading files...
+ 288.95 KiB / 288.95 KiB [==================================================================================================================================] 100.00% 2s
+
+Waiting for API to complete processing files...
+
+Staging app and tracing logs...
+   Downloading binary_buildpack...
+   Downloading java_buildpack_offline...
+   Downloading staticfile_buildpack...
+   Downloading r_buildpack...
+   Downloading nginx_buildpack...
+   Downloaded binary_buildpack
+   Downloading python_buildpack...
+   Downloaded java_buildpack_offline
+   Downloading ruby_buildpack...
+   Downloaded staticfile_buildpack
+   Downloading php_buildpack...
+   Downloaded nginx_buildpack
+   Downloading dotnet_core_buildpack...
+   Downloaded r_buildpack
+   Downloading dotnet_core_buildpack_old...
+   Downloaded python_buildpack
+   Downloading nodejs_buildpack...
+   Downloaded dotnet_core_buildpack
+   Downloading go_buildpack...
+   Downloaded php_buildpack
+   Downloaded dotnet_core_buildpack_old
+   Downloaded nodejs_buildpack
+   Downloaded go_buildpack
+   Downloaded ruby_buildpack
+   Cell 7450076b-5364-4fa8-a7ce-cf25ac98b040 creating container for instance 5eb255f0-9b4b-4a30-bf30-283830696688
+   Cell 7450076b-5364-4fa8-a7ce-cf25ac98b040 successfully created container for instance 5eb255f0-9b4b-4a30-bf30-283830696688
+   Downloading app package...
+   Downloaded app package (15M)
+   -----> Java Buildpack v4.34 (offline) | https://github.com/cloudfoundry/java-buildpack.git#04543c2
+   -----> Downloading Jvmkill Agent 1.16.0_RELEASE from https://java-buildpack.cloudfoundry.org/jvmkill/bionic/x86_64/jvmkill-1.16.0-RELEASE.so (found in cache)
+   -----> Downloading Open Jdk JRE 11.0.9_11 from https://java-buildpack.cloudfoundry.org/openjdk/bionic/x86_64/bellsoft-jre11.0.9%2B11-linux-amd64.tar.gz (found in cache)
+          Expanding Open Jdk JRE to .java-buildpack/open_jdk_jre (1.3s)
+          JVM DNS caching disabled in lieu of BOSH DNS caching
+   -----> Downloading Open JDK Like Memory Calculator 3.13.0_RELEASE from https://java-buildpack.cloudfoundry.org/memory-calculator/bionic/x86_64/memory-calculator-3.13.0-RELEASE.tar.gz (found in cache)
+          Loaded Classes: 18555, Threads: 250
+   -----> Downloading Client Certificate Mapper 1.11.0_RELEASE from https://java-buildpack.cloudfoundry.org/client-certificate-mapper/client-certificate-mapper-1.11.0-RELEASE.jar (found in cache)
+   -----> Downloading Container Security Provider 1.18.0_RELEASE from https://java-buildpack.cloudfoundry.org/container-security-provider/container-security-provider-1.18.0-RELEASE.jar (found in cache)
+   -----> Downloading Spring Auto Reconfiguration 2.11.0_RELEASE from https://java-buildpack.cloudfoundry.org/auto-reconfiguration/auto-reconfiguration-2.11.0-RELEASE.jar (found in cache)
+   Exit status 0
+   Uploading droplet, build artifacts cache...
+   Uploading build artifacts cache...
+   Uploading droplet...
+   Uploaded build artifacts cache (129B)
+   Uploaded droplet (64.1M)
+   Uploading complete
+   Cell 7450076b-5364-4fa8-a7ce-cf25ac98b040 stopping instance 5eb255f0-9b4b-4a30-bf30-283830696688
+   Cell 7450076b-5364-4fa8-a7ce-cf25ac98b040 destroying container for instance 5eb255f0-9b4b-4a30-bf30-283830696688
+   Cell 7450076b-5364-4fa8-a7ce-cf25ac98b040 successfully destroyed container for instance 5eb255f0-9b4b-4a30-bf30-283830696688
+
+Waiting for app to start...
+
+name:              pal-tracker
+requested state:   started
+routes:            pal-tracker-optimistic-meerkat-bq.apps.evans.pal.pivotal.io
+last uploaded:     Tue 12 Jan 05:17:26 UTC 2021
+stack:             cflinuxfs3
+buildpacks:        java
+
+type:            web
+instances:       1/1
+memory usage:    1024M
+start command:   JAVA_OPTS="-agentpath:$PWD/.java-buildpack/open_jdk_jre/bin/jvmkill-1.16.0_RELEASE=printHeapHistogram=1 -Djava.io.tmpdir=$TMPDIR
+                 -XX:ActiveProcessorCount=$(nproc) -Djava.ext.dirs= -Djava.security.properties=$PWD/.java-buildpack/java_security/java.security $JAVA_OPTS" &&
+                 CALCULATED_MEMORY=$($PWD/.java-buildpack/open_jdk_jre/bin/java-buildpack-memory-calculator-3.13.0_RELEASE -totMemory=$MEMORY_LIMIT -loadedClasses=19349
+                 -poolType=metaspace -stackThreads=250 -vmOptions="$JAVA_OPTS") && echo JVM Memory Configuration: $CALCULATED_MEMORY && JAVA_OPTS="$JAVA_OPTS
+                 $CALCULATED_MEMORY" && MALLOC_ARENA_MAX=2 SERVER_PORT=$PORT eval exec $PWD/.java-buildpack/open_jdk_jre/bin/java $JAVA_OPTS -cp
+                 $PWD/.:$PWD/.java-buildpack/container_security_provider/container_security_provider-1.18.0_RELEASE.jar org.springframework.boot.loader.JarLauncher
+     state     since                  cpu    memory        disk           details
+#0   running   2021-01-12T05:17:40Z   0.0%   42.1M of 1G   159.5M of 1G
+
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ cf push pal-tracker
+Pushing from manifest to org vp145.ntrs.com / space sandbox as vp145@ntrs.com...
+Using manifest file /home/ubuntu/workspace/pal-tracker/manifest.yml
+Getting app info...
+Updating app with these attributes...
+  name:                pal-tracker
+  path:                /home/ubuntu/workspace/pal-tracker/build/libs/pal-tracker.jar
+  command:             JAVA_OPTS="-agentpath:$PWD/.java-buildpack/open_jdk_jre/bin/jvmkill-1.16.0_RELEASE=printHeapHistogram=1 -Djava.io.tmpdir=$TMPDIR -XX:ActiveProcessorCount=$(nproc) -Djava.ext.dirs= -Djava.security.properties=$PWD/.java-buildpack/java_security/java.security $JAVA_OPTS" && CALCULATED_MEMORY=$($PWD/.java-buildpack/open_jdk_jre/bin/java-buildpack-memory-calculator-3.13.0_RELEASE -totMemory=$MEMORY_LIMIT -loadedClasses=19349 -poolType=metaspace -stackThreads=250 -vmOptions="$JAVA_OPTS") && echo JVM Memory Configuration: $CALCULATED_MEMORY && JAVA_OPTS="$JAVA_OPTS $CALCULATED_MEMORY" && MALLOC_ARENA_MAX=2 SERVER_PORT=$PORT eval exec $PWD/.java-buildpack/open_jdk_jre/bin/java $JAVA_OPTS -cp $PWD/.:$PWD/.java-buildpack/container_security_provider/container_security_provider-1.18.0_RELEASE.jar org.springframework.boot.loader.JarLauncher
+  disk quota:          1G
+  health check type:   port
+  instances:           1
+  memory:              1G
+  stack:               cflinuxfs3
+  env:
+    JBP_CONFIG_OPEN_JDK_JRE
+-   WELCOME_MESSAGE
++   WELCOME_MESSAGE
+  routes:
+    pal-tracker-optimistic-meerkat-bq.apps.evans.pal.pivotal.io
+
+Updating app pal-tracker...
+Mapping routes...
+Comparing local files to remote cache...
+Packaging files to upload...
+Uploading files...
+ 288.95 KiB / 288.95 KiB [==================================================================================================================================] 100.00% 2s
+
+Waiting for API to complete processing files...
+
+Stopping app...
+
+Staging app and tracing logs...
+   Downloading binary_buildpack...
+   Downloading nginx_buildpack...
+   Downloading python_buildpack...
+   Downloading dotnet_core_buildpack...
+   Downloading php_buildpack...
+   Downloaded nginx_buildpack
+   Downloading dotnet_core_buildpack_old...
+   Downloaded binary_buildpack
+   Downloading staticfile_buildpack...
+   Downloaded dotnet_core_buildpack
+   Downloaded python_buildpack
+   Downloading go_buildpack...
+   Downloading nodejs_buildpack...
+   Downloaded php_buildpack
+   Downloading java_buildpack_offline...
+   Downloaded staticfile_buildpack
+   Downloading ruby_buildpack...
+   Downloaded dotnet_core_buildpack_old
+   Downloading r_buildpack...
+   Downloaded nodejs_buildpack
+   Downloaded go_buildpack
+   Downloaded ruby_buildpack
+   Downloaded r_buildpack
+   Downloaded java_buildpack_offline
+   Cell 7450076b-5364-4fa8-a7ce-cf25ac98b040 creating container for instance 93e11717-99d7-46d0-a5b6-e4cc198629bb
+   Cell 7450076b-5364-4fa8-a7ce-cf25ac98b040 successfully created container for instance 93e11717-99d7-46d0-a5b6-e4cc198629bb
+   Downloading app package...
+   Downloading build artifacts cache...
+   Downloaded build artifacts cache (129B)
+   Downloaded app package (15M)
+   -----> Java Buildpack v4.34 (offline) | https://github.com/cloudfoundry/java-buildpack.git#04543c2
+   -----> Downloading Jvmkill Agent 1.16.0_RELEASE from https://java-buildpack.cloudfoundry.org/jvmkill/bionic/x86_64/jvmkill-1.16.0-RELEASE.so (found in cache)
+   -----> Downloading Open Jdk JRE 11.0.9_11 from https://java-buildpack.cloudfoundry.org/openjdk/bionic/x86_64/bellsoft-jre11.0.9%2B11-linux-amd64.tar.gz (found in cache)
+          Expanding Open Jdk JRE to .java-buildpack/open_jdk_jre (1.3s)
+          JVM DNS caching disabled in lieu of BOSH DNS caching
+   -----> Downloading Open JDK Like Memory Calculator 3.13.0_RELEASE from https://java-buildpack.cloudfoundry.org/memory-calculator/bionic/x86_64/memory-calculator-3.13.0-RELEASE.tar.gz (found in cache)
+          Loaded Classes: 18555, Threads: 250
+   -----> Downloading Client Certificate Mapper 1.11.0_RELEASE from https://java-buildpack.cloudfoundry.org/client-certificate-mapper/client-certificate-mapper-1.11.0-RELEASE.jar (found in cache)
+   -----> Downloading Container Security Provider 1.18.0_RELEASE from https://java-buildpack.cloudfoundry.org/container-security-provider/container-security-provider-1.18.0-RELEASE.jar (found in cache)
+   -----> Downloading Spring Auto Reconfiguration 2.11.0_RELEASE from https://java-buildpack.cloudfoundry.org/auto-reconfiguration/auto-reconfiguration-2.11.0-RELEASE.jar (found in cache)
+   Exit status 0
+   Uploading droplet, build artifacts cache...
+   Uploading build artifacts cache...
+   Uploading droplet...
+   Uploaded build artifacts cache (129B)
+   Uploaded droplet (64.2M)
+   Uploading complete
+   Cell 7450076b-5364-4fa8-a7ce-cf25ac98b040 stopping instance 93e11717-99d7-46d0-a5b6-e4cc198629bb
+   Cell 7450076b-5364-4fa8-a7ce-cf25ac98b040 destroying container for instance 93e11717-99d7-46d0-a5b6-e4cc198629bb
+   Cell 7450076b-5364-4fa8-a7ce-cf25ac98b040 successfully destroyed container for instance 93e11717-99d7-46d0-a5b6-e4cc198629bb
+
+Waiting for app to start...
+
+name:              pal-tracker
+requested state:   started
+routes:            pal-tracker-optimistic-meerkat-bq.apps.evans.pal.pivotal.io
+last uploaded:     Tue 12 Jan 05:24:06 UTC 2021
+stack:             cflinuxfs3
+buildpacks:        java
+
+type:            web
+instances:       1/1
+memory usage:    1024M
+start command:   JAVA_OPTS="-agentpath:$PWD/.java-buildpack/open_jdk_jre/bin/jvmkill-1.16.0_RELEASE=printHeapHistogram=1 -Djava.io.tmpdir=$TMPDIR
+                 -XX:ActiveProcessorCount=$(nproc) -Djava.ext.dirs= -Djava.security.properties=$PWD/.java-buildpack/java_security/java.security $JAVA_OPTS" &&
+                 CALCULATED_MEMORY=$($PWD/.java-buildpack/open_jdk_jre/bin/java-buildpack-memory-calculator-3.13.0_RELEASE -totMemory=$MEMORY_LIMIT -loadedClasses=19349
+                 -poolType=metaspace -stackThreads=250 -vmOptions="$JAVA_OPTS") && echo JVM Memory Configuration: $CALCULATED_MEMORY && JAVA_OPTS="$JAVA_OPTS
+                 $CALCULATED_MEMORY" && MALLOC_ARENA_MAX=2 SERVER_PORT=$PORT eval exec $PWD/.java-buildpack/open_jdk_jre/bin/java $JAVA_OPTS -cp
+                 $PWD/.:$PWD/.java-buildpack/container_security_provider/container_security_provider-1.18.0_RELEASE.jar org.springframework.boot.loader.JarLauncher
+     state     since                  cpu    memory        disk           details
+#0   running   2021-01-12T05:24:26Z   0.0%   56.9M of 1G   159.5M of 1G
+
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ cd ~/workspace/assignment-submission
+ubuntu@ip-172-31-19-163:~/workspace/assignment-submission$
+ubuntu@ip-172-31-19-163:~/workspace/assignment-submission$ ./gradlew cloudNativeDeveloperCloudFoundry -PserverUrl=http://pal-tracker-optimistic-meerkat-bq.apps.evans.pal.pivotal.io/
+Starting a Gradle Daemon (subsequent builds will be faster)
+
+> Task :cloudNativeDeveloperCloudFoundry
+
+Starting assignment...
+
+GET http://pal-tracker-optimistic-meerkat-bq.apps.evans.pal.pivotal.io/
+
+Assignment Failure: Expected response body to be 'Hello from Cloud Foundry'
+Please correct the above error and try again.
+
+
+
+> Task :cloudNativeDeveloperCloudFoundry FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':cloudNativeDeveloperCloudFoundry'.
+> There were errors with the assignment, please read above for details.
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.5.1/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD FAILED in 7s
+1 actionable task: 1 executed
+ubuntu@ip-172-31-19-163:~/workspace/assignment-submission$ cd -
+/home/ubuntu/workspace/pal-tracker
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ cf push pal-tracker
+Pushing from manifest to org vp145.ntrs.com / space sandbox as vp145@ntrs.com...
+Using manifest file /home/ubuntu/workspace/pal-tracker/manifest.yml
+Getting app info...
+Updating app with these attributes...
+  name:                pal-tracker
+  path:                /home/ubuntu/workspace/pal-tracker/build/libs/pal-tracker.jar
+  command:             JAVA_OPTS="-agentpath:$PWD/.java-buildpack/open_jdk_jre/bin/jvmkill-1.16.0_RELEASE=printHeapHistogram=1 -Djava.io.tmpdir=$TMPDIR -XX:ActiveProcessorCount=$(nproc) -Djava.ext.dirs= -Djava.security.properties=$PWD/.java-buildpack/java_security/java.security $JAVA_OPTS" && CALCULATED_MEMORY=$($PWD/.java-buildpack/open_jdk_jre/bin/java-buildpack-memory-calculator-3.13.0_RELEASE -totMemory=$MEMORY_LIMIT -loadedClasses=19349 -poolType=metaspace -stackThreads=250 -vmOptions="$JAVA_OPTS") && echo JVM Memory Configuration: $CALCULATED_MEMORY && JAVA_OPTS="$JAVA_OPTS $CALCULATED_MEMORY" && MALLOC_ARENA_MAX=2 SERVER_PORT=$PORT eval exec $PWD/.java-buildpack/open_jdk_jre/bin/java $JAVA_OPTS -cp $PWD/.:$PWD/.java-buildpack/container_security_provider/container_security_provider-1.18.0_RELEASE.jar org.springframework.boot.loader.JarLauncher
+  disk quota:          1G
+  health check type:   port
+  instances:           1
+  memory:              1G
+  stack:               cflinuxfs3
+  env:
+    JBP_CONFIG_OPEN_JDK_JRE
+-   WELCOME_MESSAGE
++   WELCOME_MESSAGE
+  routes:
+    pal-tracker-optimistic-meerkat-bq.apps.evans.pal.pivotal.io
+
+Updating app pal-tracker...
+Mapping routes...
+Comparing local files to remote cache...
+Packaging files to upload...
+Uploading files...
+ 288.95 KiB / 288.95 KiB [==================================================================================================================================] 100.00% 2s
+
+Waiting for API to complete processing files...
+
+Stopping app...
+
+Staging app and tracing logs...
+   Downloading binary_buildpack...
+   Downloading go_buildpack...
+   Downloading dotnet_core_buildpack_old...
+   Downloading python_buildpack...
+   Downloading dotnet_core_buildpack...
+   Downloaded binary_buildpack
+   Downloaded python_buildpack
+   Downloading staticfile_buildpack...
+   Downloaded dotnet_core_buildpack_old
+   Downloading java_buildpack_offline...
+   Downloading ruby_buildpack...
+   Downloaded go_buildpack
+   Downloading nginx_buildpack...
+   Downloaded dotnet_core_buildpack
+   Downloading php_buildpack...
+   Downloaded staticfile_buildpack
+   Downloading nodejs_buildpack...
+   Downloaded ruby_buildpack
+   Downloading r_buildpack...
+   Downloaded java_buildpack_offline
+   Downloaded nginx_buildpack
+   Downloaded php_buildpack
+   Downloaded nodejs_buildpack
+   Downloaded r_buildpack
+   Cell 7450076b-5364-4fa8-a7ce-cf25ac98b040 creating container for instance 93b81c56-4e79-4c9c-a3df-91ffdd65ab45
+   Cell 7450076b-5364-4fa8-a7ce-cf25ac98b040 successfully created container for instance 93b81c56-4e79-4c9c-a3df-91ffdd65ab45
+   Downloading app package...
+   Downloading build artifacts cache...
+   Downloaded build artifacts cache (129B)
+   Downloaded app package (15M)
+   -----> Java Buildpack v4.34 (offline) | https://github.com/cloudfoundry/java-buildpack.git#04543c2
+   -----> Downloading Jvmkill Agent 1.16.0_RELEASE from https://java-buildpack.cloudfoundry.org/jvmkill/bionic/x86_64/jvmkill-1.16.0-RELEASE.so (found in cache)
+   -----> Downloading Open Jdk JRE 11.0.9_11 from https://java-buildpack.cloudfoundry.org/openjdk/bionic/x86_64/bellsoft-jre11.0.9%2B11-linux-amd64.tar.gz (found in cache)
+          Expanding Open Jdk JRE to .java-buildpack/open_jdk_jre (1.3s)
+          JVM DNS caching disabled in lieu of BOSH DNS caching
+   -----> Downloading Open JDK Like Memory Calculator 3.13.0_RELEASE from https://java-buildpack.cloudfoundry.org/memory-calculator/bionic/x86_64/memory-calculator-3.13.0-RELEASE.tar.gz (found in cache)
+          Loaded Classes: 18555, Threads: 250
+   -----> Downloading Client Certificate Mapper 1.11.0_RELEASE from https://java-buildpack.cloudfoundry.org/client-certificate-mapper/client-certificate-mapper-1.11.0-RELEASE.jar (found in cache)
+   -----> Downloading Container Security Provider 1.18.0_RELEASE from https://java-buildpack.cloudfoundry.org/container-security-provider/container-security-provider-1.18.0-RELEASE.jar (found in cache)
+   -----> Downloading Spring Auto Reconfiguration 2.11.0_RELEASE from https://java-buildpack.cloudfoundry.org/auto-reconfiguration/auto-reconfiguration-2.11.0-RELEASE.jar (found in cache)
+   Exit status 0
+   Uploading droplet, build artifacts cache...
+   Uploading droplet...
+   Uploading build artifacts cache...
+   Uploaded build artifacts cache (129B)
+   Uploaded droplet (64.2M)
+   Uploading complete
+   Cell 7450076b-5364-4fa8-a7ce-cf25ac98b040 stopping instance 93b81c56-4e79-4c9c-a3df-91ffdd65ab45
+   Cell 7450076b-5364-4fa8-a7ce-cf25ac98b040 destroying container for instance 93b81c56-4e79-4c9c-a3df-91ffdd65ab45
+   Cell 7450076b-5364-4fa8-a7ce-cf25ac98b040 successfully destroyed container for instance 93b81c56-4e79-4c9c-a3df-91ffdd65ab45
+
+Waiting for app to start...
+
+name:              pal-tracker
+requested state:   started
+routes:            pal-tracker-optimistic-meerkat-bq.apps.evans.pal.pivotal.io
+last uploaded:     Tue 12 Jan 05:27:45 UTC 2021
+stack:             cflinuxfs3
+buildpacks:        java
+
+type:            web
+instances:       1/1
+memory usage:    1024M
+start command:   JAVA_OPTS="-agentpath:$PWD/.java-buildpack/open_jdk_jre/bin/jvmkill-1.16.0_RELEASE=printHeapHistogram=1 -Djava.io.tmpdir=$TMPDIR
+                 -XX:ActiveProcessorCount=$(nproc) -Djava.ext.dirs= -Djava.security.properties=$PWD/.java-buildpack/java_security/java.security $JAVA_OPTS" &&
+                 CALCULATED_MEMORY=$($PWD/.java-buildpack/open_jdk_jre/bin/java-buildpack-memory-calculator-3.13.0_RELEASE -totMemory=$MEMORY_LIMIT -loadedClasses=19349
+                 -poolType=metaspace -stackThreads=250 -vmOptions="$JAVA_OPTS") && echo JVM Memory Configuration: $CALCULATED_MEMORY && JAVA_OPTS="$JAVA_OPTS
+                 $CALCULATED_MEMORY" && MALLOC_ARENA_MAX=2 SERVER_PORT=$PORT eval exec $PWD/.java-buildpack/open_jdk_jre/bin/java $JAVA_OPTS -cp
+                 $PWD/.:$PWD/.java-buildpack/container_security_provider/container_security_provider-1.18.0_RELEASE.jar org.springframework.boot.loader.JarLauncher
+     state     since                  cpu    memory       disk           details
+#0   running   2021-01-12T05:28:02Z   1.6%   3.9K of 1G   159.5M of 1G
+
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ cd ~/workspace/assignment-submission
+ubuntu@ip-172-31-19-163:~/workspace/assignment-submission$
+ubuntu@ip-172-31-19-163:~/workspace/assignment-submission$ ./gradlew cloudNativeDeveloperCloudFoundry -PserverUrl=http://pal-tracker-optimistic-meerkat-bq.apps.evans.pal.pivotal.io/
+
+> Task :cloudNativeDeveloperCloudFoundry
+
+Starting assignment...
+
+GET http://pal-tracker-optimistic-meerkat-bq.apps.evans.pal.pivotal.io/
+GET http://pal-tracker-optimistic-meerkat-bq.apps.evans.pal.pivotal.io/env
+
+Assignment was successful.
+
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.5.1/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 3s
+1 actionable task: 1 executed
+ubuntu@ip-172-31-19-163:~/workspace/assignment-submission$ cd -
+/home/ubuntu/workspace/pal-tracker
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ gradle
+
+> Task :help
+
+Welcome to Gradle 6.5.1.
+
+To run a build, run gradle <task> ...
+
+To see a list of available tasks, run gradle tasks
+
+To see a list of command-line options, run gradle --help
+
+To see more detail about a task, run gradle help --task <task>
+
+For troubleshooting, visit https://help.gradle.org
+
+BUILD SUCCESSFUL in 32s
+1 actionable task: 1 executed
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ cf help
+cf version 6.53.0+8e2b70a4a.2020-10-01, Cloud Foundry command line tool
+Usage: cf [global options] command [arguments...] [command options]
+
+Before getting started:
+  config    login,l      target,t
+  help,h    logout,lo
+
+Application lifecycle:
+  apps,a        run-task,rt    events
+  push,p        logs           set-env,se
+  start,st      ssh            create-app-manifest
+  stop,sp       app            delete,d
+  restart,rs    env,e
+  restage,rg    scale
+
+Services integration:
+  marketplace,m        create-user-provided-service,cups
+  services,s           update-user-provided-service,uups
+  create-service,cs    create-service-key,csk
+  update-service       delete-service-key,dsk
+  delete-service,ds    service-keys,sk
+  service              service-key
+  bind-service,bs      bind-route-service,brs
+  unbind-service,us    unbind-route-service,urs
+
+Route and domain management:
+  routes,r        delete-route    create-domain
+  domains         map-route
+  create-route    unmap-route
+
+Space management:
+  spaces         create-space    set-space-role
+  space-users    delete-space    unset-space-role
+
+Org management:
+  orgs,o       set-org-role
+  org-users    unset-org-role
+
+CLI plugin management:
+  plugins           add-plugin-repo      repo-plugins
+  install-plugin    list-plugin-repos
+
+Commands offered by installed plugins:
+
+Global options:
+  --help, -h                         Show help
+  -v                                 Print API request diagnostics to stdout
+
+TIP: Use 'cf help -a' to see all commands.
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ cf env --help
+NAME:
+   env - Show all env variables for an app
+
+USAGE:
+   cf env APP_NAME
+
+ALIAS:
+   e
+
+SEE ALSO:
+   app, apps, running-environment-variable-group, set-env, staging-environment-variable-group, unset-env
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ cf env pal-tracker
+Getting env variables for app pal-tracker in org vp145.ntrs.com / space sandbox as vp145@ntrs.com...
+OK
+
+System-Provided:
+
+
+{
+ "VCAP_APPLICATION": {
+  "application_id": "c9252f2d-facd-489c-8dbc-c7ef9ddda812",
+  "application_name": "pal-tracker",
+  "application_uris": [
+   "pal-tracker-optimistic-meerkat-bq.apps.evans.pal.pivotal.io"
+  ],
+  "application_version": "73b99f2d-a521-4ea5-924c-f30f0d1c2a76",
+  "cf_api": "https://api.sys.evans.pal.pivotal.io",
+  "limits": {
+   "disk": 1024,
+   "fds": 16384,
+   "mem": 1024
+  },
+  "name": "pal-tracker",
+  "organization_id": "11dda134-e29d-4059-aa66-6cb79a8cd652",
+  "organization_name": "vp145.ntrs.com",
+  "process_id": "c9252f2d-facd-489c-8dbc-c7ef9ddda812",
+  "process_type": "web",
+  "space_id": "6b016f44-e49c-4a14-822e-02370a143be0",
+  "space_name": "sandbox",
+  "uris": [
+   "pal-tracker-optimistic-meerkat-bq.apps.evans.pal.pivotal.io"
+  ],
+  "users": null,
+  "version": "73b99f2d-a521-4ea5-924c-f30f0d1c2a76"
+ }
+}
+
+User-Provided:
+JBP_CONFIG_OPEN_JDK_JRE: { jre: { version: 11.+ } }
+WELCOME_MESSAGE: Hello from Cloud Foundry
+
+No running env variables have been set
+
+No staging env variables have been set
+
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ cf scale --help
+NAME:
+   scale - Change or view the instance count, disk space limit, and memory limit for an app
+
+USAGE:
+   cf scale APP_NAME [-i INSTANCES] [-k DISK] [-m MEMORY] [-f]
+
+OPTIONS:
+   -f      Force restart of app without prompt
+   -i      Number of instances
+   -k      Disk limit (e.g. 256M, 1024M, 1G)
+   -m      Memory limit (e.g. 256M, 1024M, 1G)
+
+SEE ALSO:
+   push
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ cf scale pal-tracker
+Showing current scale of app pal-tracker in org vp145.ntrs.com / space sandbox as vp145@ntrs.com...
+OK
+
+memory: 1G
+disk: 1G
+instances: 1
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ cf ssh --help
+NAME:
+   ssh - SSH to an application container instance
+
+USAGE:
+   cf ssh APP_NAME [-i INDEX] [-c COMMAND]... [-L [BIND_ADDRESS:]PORT:HOST:HOST_PORT] [--skip-host-validation] [--skip-remote-execution] [--disable-pseudo-tty | --force-pseudo-tty | --request-pseudo-tty]
+
+OPTIONS:
+   --app-instance-index, -i         Application instance index (Default: 0)
+   --command, -c                    Command to run. This flag can be defined more than once.
+   --disable-pseudo-tty, -T         Disable pseudo-tty allocation
+   --force-pseudo-tty               Force pseudo-tty allocation
+   -L                               Local port forward specification. This flag can be defined more than once.
+   --request-pseudo-tty, -t         Request pseudo-tty allocation
+   --skip-host-validation, -k       Skip host key validation
+   --skip-remote-execution, -N      Do not execute a remote command
+
+SEE ALSO:
+   allow-space-ssh, enable-ssh, space-ssh-allowed, ssh-code, ssh-enabled
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ cf ssh pal-tracker
+vcap@5dd431d0-f9b9-405d-6f6e-f3bc:~$ dir
+app  deps  logs  profile.d  staging_info.yml  tmp
+vcap@5dd431d0-f9b9-405d-6f6e-f3bc:~$ exit
+exit
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ git cherry-pick pipeline-start
+error: your local changes would be overwritten by cherry-pick.
+hint: commit your changes or stash them to proceed.
+fatal: cherry-pick failed
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ git add .
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ git commit -m "pcf 1 lab"
+[master 4b4daf5] pcf 1 lab
+ 4 files changed, 73 insertions(+), 2 deletions(-)
+ create mode 100644 manifest.yml
+ create mode 100644 src/main/java/io/pivotal/pal/tracker/EnvController.java
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ git push
+Username for 'https://github.com/vishwajeetdpatil/pal-tracker.git': vishwajeetdpatil
+Password for 'https://vishwajeetdpatil@github.com/vishwajeetdpatil/pal-tracker.git':
+Counting objects: 26, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (16/16), done.
+Writing objects: 100% (26/26), 3.53 KiB | 3.53 MiB/s, done.
+Total 26 (delta 2), reused 8 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/vishwajeetdpatil/pal-tracker.git
+   9c447a7..4b4daf5  master -> master
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ git cherry-pick pipeline-start
+[master 7fb3679] Add deployment pipeline
+ Author: Bill Kable <bkable@gmail.com>
+ Date: Wed Feb 5 00:41:11 2020 -0600
+ 1 file changed, 50 insertions(+)
+ create mode 100644 .github/workflows/pipeline.yml
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ cf apps
+Getting apps in org vp145.ntrs.com / space sandbox as vp145@ntrs.com...
+OK
+
+name          requested state   instances   memory   disk   urls
+pal-tracker   started           1/1         1G       1G     pal-tracker-optimistic-meerkat-bq.apps.evans.pal.pivotal.io
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   manifest.yml
+
+no changes added to commit (use "git add" and/or "git commit -a")
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ git add .
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ git commit -m "manifest for CD"
+[master 0f45af2] manifest for CD
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ git push
+Counting objects: 8, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (8/8), 1.28 KiB | 1.28 MiB/s, done.
+Total 8 (delta 3), reused 2 (delta 0)
+remote: Resolving deltas: 100% (3/3), completed with 2 local objects.
+To https://github.com/vishwajeetdpatil/pal-tracker.git
+   4b4daf5..0f45af2  master -> master
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ cf apps
+Getting apps in org vp145.ntrs.com / space sandbox as vp145@ntrs.com...
+OK
+
+name          requested state   instances   memory   disk   urls
+pal-tracker   started           1/1         1G       1G     pal-tracker-optimistic-meerkat-bq.apps.evans.pal.pivotal.io
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ cd apps --help
+bash: cd: too many arguments
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ cf apps --help
+NAME:
+   apps - List all apps in the target space
+
+USAGE:
+   cf apps
+
+ALIAS:
+   a
+
+SEE ALSO:
+   events, logs, map-route, push, restart, scale, start, stop
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ cf app --help
+NAME:
+   app - Display health and status for an app
+
+USAGE:
+   cf app APP_NAME [--guid]
+
+OPTIONS:
+   --guid      Retrieve and display the given app's guid.  All other health and status output for the app is suppressed.
+
+SEE ALSO:
+   apps, events, logs, map-route, push, unmap-route
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ cf app pal-tracker
+Showing health and status for app pal-tracker in org vp145.ntrs.com / space sandbox as vp145@ntrs.com...
+
+name:              pal-tracker
+requested state:   started
+routes:            pal-tracker-optimistic-meerkat-bq.apps.evans.pal.pivotal.io
+last uploaded:     Tue 12 Jan 05:27:45 UTC 2021
+stack:             cflinuxfs3
+buildpacks:        java
+
+type:           web
+instances:      1/1
+memory usage:   1024M
+     state     since                  cpu    memory       disk           details
+#0   running   2021-01-12T05:28:02Z   0.7%   136M of 1G   159.5M of 1G
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ git add .
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ git commit -m "changed manifest 2nd time for CD"
+[master 13a401f] changed manifest 2nd time for CD
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ git push
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 321 bytes | 321.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/vishwajeetdpatil/pal-tracker.git
+   0f45af2..13a401f  master -> master
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ git add .
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ git commit -m "commit for CD 3"
+[master aa561fc] commit for CD 3
+ 1 file changed, 4 insertions(+), 3 deletions(-)
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ git push
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 308 bytes | 308.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/vishwajeetdpatil/pal-tracker.git
+   13a401f..aa561fc  master -> master
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ cd ~/workspace/assignment-submission
+ubuntu@ip-172-31-19-163:~/workspace/assignment-submission$
+ubuntu@ip-172-31-19-163:~/workspace/assignment-submission$ ./gradlew cloudNativeDeveloperReviewPipeline -PreviewUrl=http://pal-tracker-vp145-cool-app.apps.evans.pal.pivotal.io/
+Starting a Gradle Daemon (subsequent builds will be faster)
+
+> Task :cloudNativeDeveloperReviewPipeline
+
+Starting assignment...
+
+GET http://pal-tracker-vp145-cool-app.apps.evans.pal.pivotal.io/
+
+Assignment Failure: Expected response body to be 'Hello from the review environment'
+Please correct the above error and try again.
+
+
+
+> Task :cloudNativeDeveloperReviewPipeline FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':cloudNativeDeveloperReviewPipeline'.
+> There were errors with the assignment, please read above for details.
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.5.1/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD FAILED in 7s
+1 actionable task: 1 executed
+ubuntu@ip-172-31-19-163:~/workspace/assignment-submission$ cd -
+/home/ubuntu/workspace/pal-tracker
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   manifest.yml
+
+no changes added to commit (use "git add" and/or "git commit -a")
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ git add .
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ git commit -m "commit for message CD4"
+[master 35db086] commit for message CD4
+ 1 file changed, 2 insertions(+), 3 deletions(-)
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ git push
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 329 bytes | 329.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/vishwajeetdpatil/pal-tracker.git
+   aa561fc..35db086  master -> master
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ cd ~/workspace/assignment-submission
+ubuntu@ip-172-31-19-163:~/workspace/assignment-submission$
+ubuntu@ip-172-31-19-163:~/workspace/assignment-submission$ ./gradlew cloudNativeDeveloperReviewPipeline -PreviewUrl=http://pal-tracker-vp145-cool-app.apps.evans.pal.pivotal.io/
+
+> Task :cloudNativeDeveloperReviewPipeline
+
+Starting assignment...
+
+GET http://pal-tracker-vp145-cool-app.apps.evans.pal.pivotal.io/
+
+Assignment was successful.
+
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.5.1/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 3s
+1 actionable task: 1 executed
+ubuntu@ip-172-31-19-163:~/workspace/assignment-submission$ cd -
+/home/ubuntu/workspace/pal-tracker
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ pwd
+/home/ubuntu/workspace/pal-tracker
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ git cherry-pick mvc-start
+[master 7d78455] Add tests for MVC lab
+ Author: Bill Kable <bkable@pivotal.io>
+ Date: Wed Jan 8 11:09:15 2020 -0500
+ 3 files changed, 374 insertions(+)
+ create mode 100644 src/test/java/test/pivotal/pal/tracker/InMemoryTimeEntryRepositoryTest.java
+ create mode 100644 src/test/java/test/pivotal/pal/tracker/TimeEntryControllerTest.java
+ create mode 100644 src/test/java/test/pivotal/pal/trackerapi/TimeEntryApiTest.java
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ ./gradlew clean compileTestJava
+Starting a Gradle Daemon (subsequent builds will be faster)
+
+BUILD SUCCESSFUL in 8s
+3 actionable tasks: 3 executed
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ ./gradlew clean compileTestJava
+
+> Task :compileTestJava FAILED
+/home/ubuntu/workspace/pal-tracker/src/test/java/test/pivotal/pal/tracker/InMemoryTimeEntryRepositoryTest.java:20: error: incompatible types: void cannot be converted to TimeEntry
+        TimeEntry createdTimeEntry = repo.create(new TimeEntry(projectId, userId, LocalDate.parse("2017-01-08"), 8));
+                                                ^
+/home/ubuntu/workspace/pal-tracker/src/test/java/test/pivotal/pal/tracker/InMemoryTimeEntryRepositoryTest.java:26: error: incompatible types: void cannot be converted to TimeEntry
+        TimeEntry readEntry = repo.find(createdTimeEntry.getId());
+                                       ^
+/home/ubuntu/workspace/pal-tracker/src/test/java/test/pivotal/pal/tracker/InMemoryTimeEntryRepositoryTest.java:40: error: incompatible types: void cannot be converted to TimeEntry
+        TimeEntry readEntry = repo.find(timeEntryId);
+                                       ^
+/home/ubuntu/workspace/pal-tracker/src/test/java/test/pivotal/pal/tracker/InMemoryTimeEntryRepositoryTest.java:50: error: incompatible types: void cannot be converted to TimeEntry
+        TimeEntry readEntry = repo.find(timeEntryId);
+                                       ^
+/home/ubuntu/workspace/pal-tracker/src/test/java/test/pivotal/pal/tracker/InMemoryTimeEntryRepositoryTest.java:64: error: 'void' type not allowed here
+        assertThat(repo.list()).containsExactlyInAnyOrderElementsOf(expected);
+                            ^
+/home/ubuntu/workspace/pal-tracker/src/test/java/test/pivotal/pal/tracker/InMemoryTimeEntryRepositoryTest.java:70: error: incompatible types: void cannot be converted to TimeEntry
+        TimeEntry created = repo.create(new TimeEntry(123L, 456L, LocalDate.parse("2017-01-08"), 8));
+                                       ^
+/home/ubuntu/workspace/pal-tracker/src/test/java/test/pivotal/pal/tracker/InMemoryTimeEntryRepositoryTest.java:72: error: incompatible types: void cannot be converted to TimeEntry
+        TimeEntry updatedEntry = repo.update(
+                                            ^
+/home/ubuntu/workspace/pal-tracker/src/test/java/test/pivotal/pal/tracker/InMemoryTimeEntryRepositoryTest.java:78: error: 'void' type not allowed here
+        assertThat(repo.find(created.getId())).isEqualTo(expected);
+                            ^
+/home/ubuntu/workspace/pal-tracker/src/test/java/test/pivotal/pal/tracker/InMemoryTimeEntryRepositoryTest.java:85: error: incompatible types: void cannot be converted to TimeEntry
+        TimeEntry updatedEntry = repo.update(
+                                            ^
+/home/ubuntu/workspace/pal-tracker/src/test/java/test/pivotal/pal/tracker/InMemoryTimeEntryRepositoryTest.java:98: error: incompatible types: void cannot be converted to TimeEntry
+        TimeEntry created = repo.create(new TimeEntry(projectId, userId, LocalDate.parse("2017-01-08"), 8));
+                                       ^
+/home/ubuntu/workspace/pal-tracker/src/test/java/test/pivotal/pal/tracker/InMemoryTimeEntryRepositoryTest.java:101: error: 'void' type not allowed here
+        assertThat(repo.list()).isEmpty();
+                            ^
+/home/ubuntu/workspace/pal-tracker/src/test/java/test/pivotal/pal/tracker/InMemoryTimeEntryRepositoryTest.java:110: error: incompatible types: void cannot be converted to TimeEntry
+        TimeEntry created = repo.create(new TimeEntry(projectId, userId, LocalDate.parse("2017-01-08"), 8));
+                                       ^
+/home/ubuntu/workspace/pal-tracker/src/test/java/test/pivotal/pal/tracker/InMemoryTimeEntryRepositoryTest.java:116: error: incompatible types: void cannot be converted to TimeEntry
+        TimeEntry createdSecond = repo.create(new TimeEntry(projectId, userId, LocalDate.parse("2017-01-08"), 8));
+                                             ^
+13 errors
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileTestJava'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 3s
+3 actionable tasks: 3 executed
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ ./gradlew clean compileTestJava
+
+> Task :compileJava
+Note: /home/ubuntu/workspace/pal-tracker/src/main/java/io/pivotal/pal/tracker/InMemoryTimeEntryRepository.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+BUILD SUCCESSFUL in 2s
+3 actionable tasks: 3 executed
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ ./gradlew clean build
+
+> Task :compileJava
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+> Task :test
+2021-01-13 05:14:04.191  INFO 15428 --- [extShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+
+BUILD SUCCESSFUL in 6s
+5 actionable tasks: 5 executed
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ curl -v localhost:8080/time-entries
+*   Trying 127.0.0.1...
+* TCP_NODELAY set
+* Connected to localhost (127.0.0.1) port 8080 (#0)
+> GET /time-entries HTTP/1.1
+> Host: localhost:8080
+> User-Agent: curl/7.58.0
+> Accept: */*
+>
+< HTTP/1.1 200
+< Content-Type: application/json
+< Transfer-Encoding: chunked
+< Date: Wed, 13 Jan 2021 05:16:29 GMT
+<
+* Connection #0 to host localhost left intact
+[]ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ curl -v -XPOST -H"Content-Type: application/json" localhost:8080/time-entries -d"{\"projectId\": 1, \"userId\": 2, \"te\": \"2019-01-01\", \"hours\": 8}"
+Note: Unnecessary use of -X or --request, POST is already inferred.
+*   Trying 127.0.0.1...
+* TCP_NODELAY set
+* Connected to localhost (127.0.0.1) port 8080 (#0)
+> POST /time-entries HTTP/1.1
+> Host: localhost:8080
+> User-Agent: curl/7.58.0
+> Accept: */*
+> Content-Type: application/json
+> Content-Length: 63
+>
+* upload completely sent off: 63 out of 63 bytes
+< HTTP/1.1 201
+< Content-Type: application/json
+< Transfer-Encoding: chunked
+< Date: Wed, 13 Jan 2021 05:17:11 GMT
+<
+* Connection #0 to host localhost left intact
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ 01","houlocalhost:8080/time-entries
+*   Trying 127.0.0.1...
+* TCP_NODELAY set
+* Connected to localhost (127.0.0.1) port 8080 (#0)
+> GET /time-entries HTTP/1.1
+> Host: localhost:8080
+> User-Agent: curl/7.58.0
+> Accept: */*
+>
+< HTTP/1.1 200
+< Content-Type: application/json
+< Transfer-Encoding: chunked
+< Date: Wed, 13 Jan 2021 05:17:22 GMT
+<
+* Connection #0 to host localhost left intact
+[{"id":1,"projectId":1,"userId":2,"date":"2019-01-01","hours":8}]ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ curl -v localhost:8080/time-entries/1
+*   Trying 127.0.0.1...
+* TCP_NODELAY set
+* Connected to localhost (127.0.0.1) port 8080 (#0)
+> GET /time-entries/1 HTTP/1.1
+> Host: localhost:8080
+> User-Agent: curl/7.58.0
+> Accept: */*
+>
+< HTTP/1.1 200
+< Content-Type: application/json
+< Transfer-Encoding: chunked
+< Date: Wed, 13 Jan 2021 05:17:55 GMT
+<
+* Connection #0 to host localhost left intact
+{"id":1,"projectId":1,"userId":2,"date":"2019-01-01","hours":8}ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ curl -v -XPUT -H"Content-Type: application/json" localho"date\": \"2021-01-01\", \"hours\": 8}"": 88, \"userId\": 99, \"
+*   Trying 127.0.0.1...
+* TCP_NODELAY set
+* Connected to localhost (127.0.0.1) port 8080 (#0)
+> PUT /time-entries/1 HTTP/1.1
+> Host: localhost:8080
+> User-Agent: curl/7.58.0
+> Accept: */*
+> Content-Type: application/json
+> Content-Length: 65
+>
+* upload completely sent off: 65 out of 65 bytes
+< HTTP/1.1 200
+< Content-Type: application/json
+< Transfer-Encoding: chunked
+< Date: Wed, 13 Jan 2021 05:18:49 GMT
+<
+* Connection #0 to host localhost left intact
+{"id":1,"projectId":88,"userId":99,"date":"2021-01-01","hours":8}ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ curl -v -XDELETE -H"Content-Type: application/json" localhost:8080/time-entries/1
+*   Trying 127.0.0.1...
+* TCP_NODELAY set
+* Connected to localhost (127.0.0.1) port 8080 (#0)
+> DELETE /time-entries/1 HTTP/1.1
+> Host: localhost:8080
+> User-Agent: curl/7.58.0
+> Accept: */*
+> Content-Type: application/json
+>
+< HTTP/1.1 204
+< Date: Wed, 13 Jan 2021 05:19:16 GMT
+<
+* Connection #0 to host localhost left intact
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ curl -v localhost:8080/time-entries
+*   Trying 127.0.0.1...
+* TCP_NODELAY set
+* Connected to localhost (127.0.0.1) port 8080 (#0)
+> GET /time-entries HTTP/1.1
+> Host: localhost:8080
+> User-Agent: curl/7.58.0
+> Accept: */*
+>
+< HTTP/1.1 200
+< Content-Type: application/json
+< Transfer-Encoding: chunked
+< Date: Wed, 13 Jan 2021 05:19:24 GMT
+<
+* Connection #0 to host localhost left intact
+[]ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   src/main/java/io/pivotal/pal/tracker/InMemoryTimeEntryRepository.java
+	new file:   src/main/java/io/pivotal/pal/tracker/TimeEntry.java
+	new file:   src/main/java/io/pivotal/pal/tracker/TimeEntryController.java
+	new file:   src/main/java/io/pivotal/pal/tracker/TimeEntryRepository.java
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   src/main/java/io/pivotal/pal/tracker/InMemoryTimeEntryRepository.java
+	modified:   src/main/java/io/pivotal/pal/tracker/TimeEntry.java
+	modified:   src/main/java/io/pivotal/pal/tracker/TimeEntryController.java
+	modified:   src/main/java/io/pivotal/pal/tracker/TimeEntryRepository.java
+	modified:   src/test/java/test/pivotal/pal/trackerapi/TimeEntryApiTest.java
+
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ git add .
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ git commit -m "TimeRepo1"
+[master bc0dda0] TimeRepo1
+ 5 files changed, 212 insertions(+), 2 deletions(-)
+ create mode 100644 src/main/java/io/pivotal/pal/tracker/InMemoryTimeEntryRepository.java
+ create mode 100644 src/main/java/io/pivotal/pal/tracker/TimeEntry.java
+ create mode 100644 src/main/java/io/pivotal/pal/tracker/TimeEntryController.java
+ create mode 100644 src/main/java/io/pivotal/pal/tracker/TimeEntryRepository.java
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ git pust
+git: 'pust' is not a git command. See 'git --help'.
+
+The most similar command is
+	push
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ git push
+Username for 'https://github.com/vishwajeetdpatil/pal-tracker.git': vishwajeetdpatil
+Password for 'https://vishwajeetdpatil@github.com/vishwajeetdpatil/pal-tracker.git':
+Counting objects: 33, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (20/20), done.
+Writing objects: 100% (33/33), 6.25 KiB | 6.25 MiB/s, done.
+Total 33 (delta 3), reused 7 (delta 0)
+remote: Resolving deltas: 100% (3/3), completed with 1 local object.
+To https://github.com/vishwajeetdpatil/pal-tracker.git
+   35db086..bc0dda0  master -> master
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker$ cd ~/workspace/assignment-submission
+ubuntu@ip-172-31-19-163:~/workspace/assignment-submission$
+ubuntu@ip-172-31-19-163:~/workspace/assignment-submission$ ./gradlew cloudNativeDeveloperRest -PserverUrl=http://pal-tracker-vp145-cool-app.apps.evans.pal.pivotal.io/
+Starting a Gradle Daemon (subsequent builds will be faster)
+
+> Task :cloudNativeDeveloperRest
+
+Starting assignment...
+
+GET http://pal-tracker-vp145-cool-app.apps.evans.pal.pivotal.io/time-entries
+POST http://pal-tracker-vp145-cool-app.apps.evans.pal.pivotal.io/time-entries
+GET http://pal-tracker-vp145-cool-app.apps.evans.pal.pivotal.io/time-entries/1
+PUT http://pal-tracker-vp145-cool-app.apps.evans.pal.pivotal.io/time-entries/1
+GET http://pal-tracker-vp145-cool-app.apps.evans.pal.pivotal.io/time-entries/1
+DELETE http://pal-tracker-vp145-cool-app.apps.evans.pal.pivotal.io/time-entries/1
+GET http://pal-tracker-vp145-cool-app.apps.evans.pal.pivotal.io/time-entries/1
+
+Assignment was successful.
+
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.5.1/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 9s
+1 actionable task: 1 executed
+ubuntu@ip-172-31-19-163:~/workspace/assignment-submission$
+
+
